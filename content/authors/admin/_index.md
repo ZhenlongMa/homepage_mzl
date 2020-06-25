@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Zhenlong Ma / 马振龙
+title: Zhenlong Ma 
+马振龙
 
 # Username (this should match the folder name)
 authors:
@@ -10,11 +11,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Phd Candidate of Computer Architecture
+role: PhD Candidate of Computer Architecture
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Institute of Computing Technology, Chinese Academy of Scienses
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
