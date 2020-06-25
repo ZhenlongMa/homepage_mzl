@@ -1,7 +1,6 @@
 ---
 # Display name
-title: Zhenlong Ma 
-马振龙
+title: Zhenlong Ma
 
 # Username (this should match the folder name)
 authors:
