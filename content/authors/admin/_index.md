@@ -63,6 +63,5 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Zhenlong Ma is a Ph.D candidate of Computer Architecture in Institute of Computing Technology, Chinese Academy of Scienses. His research interests include computer network and computer architecture.
+马振龙是一位计算机系统结构方向的在读博士生，就读于中国科学院计算技术研究所。研究兴趣包括计算机网络和计算机体系结构。
