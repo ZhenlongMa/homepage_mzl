@@ -32,6 +32,12 @@ subtitle = ""
   name = "Photography"
   description = "10%"
 
+[[feature]]
+  icon = ""
+  icon_pack = ""
+  name = "UVM"
+  description = "40%"
+
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
