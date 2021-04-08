@@ -12,4 +12,6 @@ header:
   caption: ""
   image: ""
 ---
-hello
+Hello
+
+This is Zhenlong Ma's blog. Thanks for visiting!
