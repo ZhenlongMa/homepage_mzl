@@ -24,6 +24,11 @@
   weight = 40
 
 [[main]]
+  name = "Blog"
+  url = "https://www.cnblogs.com/mazhenlong/"
+  weight = 50
+
+[[main]]
   name = "Contact"
   url = "#contact"
   weight = 60
