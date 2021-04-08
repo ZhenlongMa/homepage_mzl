@@ -88,7 +88,7 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "mazhenlong@ncic.ac.cn"
+email = "mazhenlong AT ncic.ac.cn"
 phone = "+86-153-1379-9575"
 
 # Address
@@ -101,14 +101,14 @@ address = {street = "158 Beiqing Rd", city = "Beijing", region = "", postcode = 
 coordinates = {latitude = "40.06017", longitude = "116.17345"} 
 
 # Directions for visitors to locate you.
-directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
+directions = "322E on Floor 3, Building 1"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Monday 10:00 to 13:00", "Wednesday 09:00 to 10:00"]
+#office_hours = ["Monday 10:00 to 13:00", "Wednesday 09:00 to 10:00"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://calendly.com"
+#appointment_url = "https://calendly.com"
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
