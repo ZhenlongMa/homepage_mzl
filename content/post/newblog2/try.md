@@ -1,5 +1,5 @@
 ---
-title: New Post
+title: Try
 
 # View.
 #   1 = List
@@ -8,7 +8,8 @@ title: New Post
 view: 2
 
 comments: true
-profile: false
+profile: true
+share: false
 
 # Optional header image (relative to `static/img/` folder).
 header:
