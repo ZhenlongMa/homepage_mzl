@@ -16,4 +16,4 @@ header:
 > This is Zhenlong Ma's blog. Thanks for visiting!
 
 ## _Table of Contents_
-- [New Post](newblog/)
+<!-- - [New Post](newblog/) -->
