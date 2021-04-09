@@ -47,9 +47,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/ZhenlongMa
-- icon: weixin
-  icon_pack: fab
-  link: static/wechat.md
+#- icon: weixin
+#  icon_pack: fab
+#  link: static/wechat.md
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/zhenlong-ma
@@ -67,6 +67,12 @@ email: ""
 user_groups:
 - Researchers
 - Visitors
+
+# Generate Wowchemy CMS
+# type: wowchemycms
+# outputs:
+#   - wowchemycms_config
+#   - HTML
 ---
 
 Zhenlong Ma is a Ph.D candidate of Computer Architecture in Institute of Computing Technology, Chinese Academy of Scienses. His research interests include computer network and computer architecture. He has no research result until now.
