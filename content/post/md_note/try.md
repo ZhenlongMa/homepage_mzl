@@ -1,5 +1,6 @@
 ---
-title: Try
+title: Markdown note
+summary: This page records my markdown learning notes.
 
 # View.
 #   1 = List
@@ -17,4 +18,7 @@ header:
   image: ""
 ---
 
-This is to try sub layout.
+## Headings and sub-headings:
+\#
+
+\##
