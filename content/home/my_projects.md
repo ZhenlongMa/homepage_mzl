@@ -18,4 +18,4 @@ subtitle = ""
 +++
 
 ## **HCA Verification**
-Build the verification platform for IB NIC.
+Build the verification platform for IB NIC using UVM.
