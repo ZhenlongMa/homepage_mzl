@@ -13,7 +13,7 @@ header:
   image: ""
 ---
 
-This is Zhenlong Ma's blog. Thanks for visiting!
+> This is Zhenlong Ma's blog. Thanks for visiting!
 
-# Table of Contents
+## _Table of Contents_
 - [New Post](newblog/)
