@@ -1,5 +1,6 @@
 ---
-title: New Post 1
+title: Working Log
+summary: Here I record my work everyday.
 
 # View.
 #   1 = List
