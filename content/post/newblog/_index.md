@@ -12,8 +12,4 @@ header:
   caption: ""
   image: ""
 ---
-
-This is Zhenlong Ma's blog. Thanks for visiting!
-
-# Table of Contents
-- [New Article](newblog/_index.md)
+This is a new blog.
