@@ -22,4 +22,4 @@ header:
 - Finish slave_monitor.
 ## April 9
 - Finish blog building;
-- Finish initial ref model;
+- Finish initial ref model.
