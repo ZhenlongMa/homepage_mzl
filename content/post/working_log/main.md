@@ -1,6 +1,6 @@
 ---
 title: Working Log
-summary: Here I record my work and study everyday.
+summary: Here I record my work and study. Try my best to write 100 words every day!
 
 # View.
 #   1 = List
@@ -18,5 +18,8 @@ header:
   image: ""
 ---
 # 2021
-## April 9
+## April 8
 - Finish slave_monitor.
+## April 9
+- Finish blog building;
+- Finish initial ref model;
