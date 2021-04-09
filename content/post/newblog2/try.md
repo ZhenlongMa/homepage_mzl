@@ -7,6 +7,8 @@ title: New Post
 #   3 = Card
 view: 2
 
+comments: true
+
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
