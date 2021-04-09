@@ -8,6 +8,7 @@ title: New Post
 view: 2
 
 comments: true
+profile: false
 
 # Optional header image (relative to `static/img/` folder).
 header:
