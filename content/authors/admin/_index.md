@@ -49,7 +49,7 @@ social:
   link: https://github.com/ZhenlongMa
 - icon: weixin
   icon_pack: fab
-  link: static/img/wechat_qrcode.jpg
+  link: static/wechat.md
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/zhenlong-ma
