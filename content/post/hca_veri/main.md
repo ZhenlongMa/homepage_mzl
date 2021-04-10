@@ -14,7 +14,6 @@ comments: true
 profile: true
 share: false
 
-publication_types: ["3"]
 
 # Optional header image (relative to `static/img/` folder).
 header:
