@@ -17,6 +17,6 @@ subtitle = ""
     columns = "2"
 +++
 
-## **HCA Verification**
-Build the verification platform for IB NIC using UVM.
+## **[HCA Verification]({{< relref "../post/hca_veri/" >}})**
+Build the verification platform for IB HCA using UVM.
 
