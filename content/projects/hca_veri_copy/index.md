@@ -13,7 +13,7 @@ view: 2
 comments: true
 profile: true
 share: false
-headless: true
+#headless: true
 
 
 # Optional header image (relative to `static/img/` folder).
