@@ -1,8 +1,8 @@
 ---
 title: HCA Verification
 summary: This article is the introduction for my work of verification of HCA.
-#authors:
-#- admin
+authors:
+- admin
 
 # View.
 #   1 = List
