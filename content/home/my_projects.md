@@ -17,6 +17,6 @@ subtitle = ""
     columns = "2"
 +++
 
-## **[HCA Verification]({{< relref "../post/hca_veri/main.md" >}})**
+## **[HCA Verification]({{< relref "../projects/hca_veri/main.md" >}})**
 Build the verification platform for IB HCA using UVM.
 
