@@ -29,6 +29,6 @@ subtitle = ""
 #    page_type = projects
 +++
 
-## **[HCA Verification](../projects/hca_veri/main.md)**
+## **[HCA Verification](../projects/hca_veri/main/)**
 Build the verification platform for IB HCA using UVM.
 
