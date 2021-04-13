@@ -29,6 +29,6 @@ subtitle = ""
 #    page_type = "projects"
 +++
 
-### **[<font color = black> HCA Verification </font>]({{< relref "../projects/hca_veri/main.md" >}})**
+### **[<font color = black> HCA Verification </font>]({{< relref "../projects/" >}})**
 Build the verification platform for IB HCA using UVM.
 
