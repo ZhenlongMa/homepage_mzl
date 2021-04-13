@@ -2,6 +2,8 @@
 title: Working Log
 summary: Here I record my work and study. Try my best to write 100 words every day!
 
+authors:
+
 # View.
 #   1 = List
 #   2 = Compact

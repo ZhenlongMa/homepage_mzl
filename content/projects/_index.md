@@ -13,7 +13,7 @@ header:
   image: ""
 
 content:
-  page_type = "post"
+
 ---
 
 > This is introductions to my projects. Thanks for visiting!
