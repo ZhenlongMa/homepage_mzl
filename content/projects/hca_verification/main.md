@@ -28,3 +28,5 @@ Host Channel Adapter is the software/hardware interface between IB network and h
 Verification framework includes xxxx
 
 ![Verification framework](./framework.jpg)
+
+{{< figure src="framework.jpg" caption="A caption" numbered="true" >}}
