@@ -27,4 +27,4 @@ Host Channel Adapter is the software/hardware interface between IB network and h
 ## 2. HCA Verification
 Verification framework includes xxxx
 
-![Verification framework](framework.jpg)
+![Verification framework](./framework.jpg)
