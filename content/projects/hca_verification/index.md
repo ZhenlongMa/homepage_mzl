@@ -21,12 +21,13 @@ header:
   image: ""
 ---
 
-## 1. HCA Introduction
-Host Channel Adapter is the software/hardware interface between IB network and host. 
+## **1. HCA Introduction**
+Host Channel Adapter(HCA) is the software/hardware interface between IB network and host. Our HCA - HanGu HCA - supports up to 16K QPs and bandwidth with 100Gbps.
 
-## 2. HCA Verification
-Verification framework includes xxxx
+## **2. HCA Verification**
+My verification framework is built based on Universal Verification Methodology(UVM).
 
 ![Verification framework](./framework.jpg)
 
-{{< figure src="/content/projects/hca_verification/framework.jpg" caption="A caption" numbered="true" >}}
+
+{{< figure src="framework.jpg" caption="Verification Framework" numbered="true" >}}
