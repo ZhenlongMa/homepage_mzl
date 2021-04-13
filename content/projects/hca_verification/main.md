@@ -21,4 +21,10 @@ header:
   image: ""
 ---
 
-## HCA Introduction
+## 1. HCA Introduction
+Host Channel Adapter is the software/hardware interface between IB network and host. 
+
+## 2. HCA Verification
+Verification framework includes xxxx
+
+![Verification framework](framework.jpg)
