@@ -28,4 +28,4 @@ Host Channel Adapter(HCA) is the software/hardware interface between IB network 
 My verification framework is built based on Universal Verification Methodology(UVM).
 
 
-{{< figure src="framework.jpg" caption="Verification Framework" numbered="true" height=500>}}
+{{< figure src="framework.jpg" caption="Verification Framework" numbered="true" height="500" >}}
