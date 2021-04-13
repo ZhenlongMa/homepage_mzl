@@ -29,4 +29,4 @@ Verification framework includes xxxx
 
 ![Verification framework](./framework.jpg)
 
-{{< figure src="framework.jpg" caption="A caption" numbered="true" >}}
+{{< figure src="/content/projects/hca_verification/framework.jpg" caption="A caption" numbered="true" >}}
