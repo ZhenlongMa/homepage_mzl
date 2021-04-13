@@ -15,7 +15,7 @@
 
 [[main]]
   name = "Projects"
-  url = "/projects/_index"
+  url = "/projects/_index.md"
   weight = 30
 
 #[[main]]
