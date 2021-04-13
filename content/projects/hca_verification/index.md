@@ -1,8 +1,8 @@
 ---
 title: HCA Verification
 summary: This article is the introduction for my work of verification of HCA.
-authors:
-- admin
+#authors:
+#- admin
 
 # View.
 #   1 = List
@@ -26,8 +26,6 @@ Host Channel Adapter(HCA) is the software/hardware interface between IB network 
 
 ## **2. HCA Verification**
 My verification framework is built based on Universal Verification Methodology(UVM).
-
-![Verification framework](./framework.jpg)
 
 
 {{< figure src="framework.jpg" caption="Verification Framework" numbered="true" >}}

@@ -20,6 +20,24 @@ subtitle = ""
   name = "UVM"
   description = "40%"
 
+[[feature]]
+  icon = "laptop-code"
+  icon_pack = "fas"
+  name = "Operating System"
+  description = "20%"
+
+[[feature]]
+  icon = "sitemap"
+  icon_pack = "fas"
+  name = "Computer Network"
+  description = "30%"
+
+[[feature]]
+  icon = "server"
+  icon_pack = "fas"
+  name = "Computer Architecture"
+  description = "30%"
+
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
