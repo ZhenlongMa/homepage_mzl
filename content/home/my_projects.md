@@ -15,7 +15,7 @@
 #    #   4 = Citation (publication only)
 #    view = 2
 #    columns = "2"
-widget = "page"
+widget = "pages"
 headless = true
 active = true
 weight = 65
