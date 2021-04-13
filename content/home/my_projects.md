@@ -25,6 +25,7 @@ title = "Projects"
     columns = "2"
 [content]
     page_type = "projects"
+    count = 3
 +++
 
 <!-- ### **[ HCA Verification ]({{< relref "../projects/hca_veri/main.md" >}})**
