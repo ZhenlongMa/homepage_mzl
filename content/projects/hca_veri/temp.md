@@ -2,6 +2,6 @@
 title: temp
 summary: temp try
 authors: 
-    - admin
+- admin
 ---
 try not include title
