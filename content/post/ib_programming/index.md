@@ -21,7 +21,7 @@ header:
 ---
 
 ## 1. Introduction
-There are three network technology supporting RDMA: InfiniBand, RoCE and iWARP, all of which use common API - called verbs - defined by Mallanox, just like socket in TCP/IP.
+There are three network technology supporting RDMA: InfiniBand, RoCE and iWARP, all of which use common API - called verbs - defined by Mallanox.
 
 ## 2. Programming Interface
 Libibverbs is the standard communication library provided by Mallanox. Its path is `libibverbs-1.2.1/src/verb.c`.
