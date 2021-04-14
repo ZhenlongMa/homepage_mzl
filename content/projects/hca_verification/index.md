@@ -22,9 +22,7 @@ header:
 ---
 
 ## **1. HCA Introduction**
-Host Channel Adapter(HCA) is the software/hardware interface between IB network and host. Our HCA - HanGu HCA - supports up to 16K QPs and bandwidth with 100Gbps.
-
-Different from socket in TCP/IP network, IB network uses verbs as user/kernel programming interface.
+Host Channel Adapter(HCA) is the software/hardware interface between IB network and host. Our HCA - HanGu HCA - supports up to 16K QPs and bandwidth with 100Gbps. Different from widely-known NIC, HCA provides address translation and protection machanism, through which applications can send data to HCA without the involvement of OS.
 
 ## **2. HCA Verification**
 My verification framework is built based on Universal Verification Methodology(UVM). Compared with raw systemverilog, UVM
