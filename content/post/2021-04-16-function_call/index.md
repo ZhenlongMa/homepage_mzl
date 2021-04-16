@@ -5,6 +5,8 @@ view: 2
 summary: The issue of parameter passing in function call.
 
 share: false
+tags:
+- technical issue
 ---
 It should be noticed when call a function in fork statement in systemverilog. Take below as example:
 ```verilog
