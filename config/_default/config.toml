@@ -12,8 +12,8 @@ title = "Zhenlong Ma's Page"
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "/"
 # added by mazhenlong
-[params]
-  google_site_verification = "crqPeefUIEVA6LBptenL0Zas41y4eLwouK4TqW-Oqcg"
+#[params]
+#  google_site_verification = "crqPeefUIEVA6LBptenL0Zas41y4eLwouK4TqW-Oqcg"
 
 
 # Enter a copyright notice to display in the site footer.
