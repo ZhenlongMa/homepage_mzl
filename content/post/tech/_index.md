@@ -1,21 +1,23 @@
 ---
 title: Function Call in Fork-Join in SystemVerilog
 view: 2
+
+summary: The issue of parameter passing in function call.
 ---
 It should be noticed when call a function in fork statement in systemverilog. Take below as example:
-```systemverilog
-module test1;   
-    initial begin        
-        for (int j = 0; j < 3; j++)            
-            begin               
-                int k;               
-                k = j;               
-                fork                     
-                    $write(k);               
-                join_none            
-            end            
+```verilog
+module test1;
+    initial begin
+        for (int j = 0; j < 3; j++)
+            begin
+                int k;
+                k = j;
+                fork
+                    $write(k);
+                join_none
+            end
             #0
-            $display("end\n");        
+            $display("end\n");
         end
 endmodule
 ```
