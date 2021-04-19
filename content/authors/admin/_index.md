@@ -23,6 +23,8 @@ bio:
 interests:
 - Computer Network
 - Computer Architecture
+- Remote Direct Memory Access
+- InfiniBand
 
 education:
   courses:

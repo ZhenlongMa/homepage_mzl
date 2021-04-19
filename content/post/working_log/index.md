@@ -25,3 +25,5 @@ header:
 ## April 9
 - Finish blog building;
 - Finish initial ref model.
+## April 18
+- If the endnode lies inside the network, the network is direct network, otherwize it is indirect network.
