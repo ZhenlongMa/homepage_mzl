@@ -24,7 +24,7 @@ title = "Projects"
     view = 2
     columns = "2"
 [content]
-    page_type = "projects"
+    page_type = "prj"
     count = 3
 +++
 
