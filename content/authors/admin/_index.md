@@ -52,6 +52,9 @@ social:
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/zhenlong-ma
+- icon: quora
+  icon_pack: fab
+  link: https://www.quora.com/profile/Zhenlong-Ma-2
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
