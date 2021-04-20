@@ -9,6 +9,7 @@ comments: true
 profile: true
 share: false
 
+headless: true
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
@@ -24,7 +25,18 @@ virtual task start ( uvm_sequencer_base sequencer,
                      bit                call_pre_post = 1       );
 ```
 
-The first argument must be set, others being optional.
+The first argument must be set, others being optional. After calling `seq.start()`, following methods will execute in order and in demand:
+
+```verilog
+seq.pre_start();
+seq.pre_body();                 // if call_pre_post == 1
+    parent_seq.pre_do();        // if parent_seq != null
+    parent_seq_mid_do(this);    // if parent_seq != null
+seq.bosy();
+    parent_seq_post_do(this);   // if parent_seq != null
+seq.post_body();                // if call_pre_post == 1
+sub_seq.post_start();
+```
 
 
 
