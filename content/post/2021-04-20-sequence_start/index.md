@@ -1,6 +1,7 @@
 ---
 title: Use of start() of sequences in UVM
 summary: Procedure of start method of sequences in UVM.
+publishDate: "2020-04-20T12:29:00Z"
 
 view: 2
 
