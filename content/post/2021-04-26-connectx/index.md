@@ -1,7 +1,6 @@
 ---
-title: A Surve on ConnectX NIC
-summary: 
-publishDate: "2021-04-26T09:36:00Z"
+title: A Survey on ConnectX NIC
+publishDate: "2021-04-26T10:35:00Z"
 
 view: 2
 
@@ -9,12 +8,9 @@ comments: true
 profile: true
 share: false
 
-headless: true
-# Optional header image (relative to `static/img/` folder).
-header:
-  caption: ""
-  image: ""
+headless: false
 ---
+
 ## ConnectX-5:
 **Datacenter RPCs can be general and fast:**
 
