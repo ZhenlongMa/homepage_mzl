@@ -1,8 +1,8 @@
 ---
 title: A Survey on ConnectX NIC
 summary: This is an integration of information about Mellanox ConnectX-3, ConnectX-4 and ConnectX-5 NIC.
-#publishDate: "2021-04-26T10:35:00Z"
-publishData: "2021-04-26"
+publishDate: "2021-04-26T03:05:20Z"
+#publishData: "2021-04-26"
 
 view: 2
 
