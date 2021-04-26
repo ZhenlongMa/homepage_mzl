@@ -9,7 +9,7 @@ comments: true
 profile: true
 share: false
 
-headless: false
+headless: true
 ---
 
 ## ConnectX-5:
