@@ -15,7 +15,7 @@ share: false
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 ---
 
