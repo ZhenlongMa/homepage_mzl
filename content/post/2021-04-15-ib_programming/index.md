@@ -12,7 +12,7 @@ comments: true
 profile: true
 share: false
 
-headless: true # temp invisible
+headless: false # temp invisible
 
 # Optional header image (relative to `static/img/` folder).
 header:

@@ -9,7 +9,7 @@ comments: true
 profile: true
 share: false
 
-headless: true
+headless: false
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
