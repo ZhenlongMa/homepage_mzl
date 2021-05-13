@@ -1,10 +1,22 @@
 ---
 title: Function Call in Fork-Join in SystemVerilog
-view: 2
-
 summary: The issue of parameter passing in function call.
 
+date: ""
+publishDate: "2021-04-16T14:33:00+08:00"
+lastmod: ""
+
+view: 2
+
+comments: true
+profile: true
 share: false
+
+featured: false
+headless: false
+draft: false
+private: false
+
 tags:
 - technical issue
 ---
