@@ -12,6 +12,10 @@ comments: true
 profile: true
 share: false
 
+featured: false
+draft: false
+private: false
+
 headless: true # temp invisible
 
 # Optional header image (relative to `static/img/` folder).

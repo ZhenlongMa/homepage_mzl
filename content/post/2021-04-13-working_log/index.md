@@ -14,6 +14,11 @@ comments: true
 profile: true
 share: false
 
+featured: false
+headless: false
+draft: false
+private: false
+
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
