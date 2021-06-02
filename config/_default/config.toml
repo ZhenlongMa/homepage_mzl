@@ -14,6 +14,11 @@ baseurl = "/"
 # added by mazhenlong
 #[params]
 #  google_site_verification = "crqPeefUIEVA6LBptenL0Zas41y4eLwouK4TqW-Oqcg"
+# [params.gitment]
+    # owner = ""              # Your GitHub ID
+    # repo = ""               # The repo to store comments
+    # clientId = ""           # Your client ID
+    # clientSecret = ""       # Your client secret
 
 
 # Enter a copyright notice to display in the site footer.
