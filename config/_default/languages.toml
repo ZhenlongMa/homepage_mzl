@@ -9,12 +9,17 @@
 
 # Uncomment the lines below to configure your website in a second language.
 [zh]
- languageCode = "zh-Hans"
- contentDir = "content/zh"
- title = "马振龙的个人主页"
+    languageCode = "zh-Hans"
+    contentDir = "content/zh"
+    title = "马振龙的个人主页"
 #  [zh.params]
 #    description = "Site description in Chinese..."
-#  [[zh.menu.main]]
-#    name = "Wo"
-#    url = "#about"
-#    weight = 1
+    [[zh.menu.main]]
+        name = "首页"
+        url = "#about"
+        weight = 10
+
+    [[zh.menu.main]]
+        name = "工程项目"
+        url = "/prj/"
+        weight = 30
