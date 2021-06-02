@@ -35,3 +35,4 @@
         weight = 60
     [zh.params]
         address = {street = "北清路158号", city = "北京", region = "海淀区", postcode = "100058", country = "China", country_code = "CN"}
+        # directions = "322E, Building 1"

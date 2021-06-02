@@ -101,7 +101,7 @@ address = {street = "158 Beiqing Rd", city = "Beijing", region = "", postcode = 
 coordinates = {latitude = "40.06030", longitude = "116.17289"} 
 
 # Directions for visitors to locate you.
-directions = "322E, Building 1"
+# directions = "322E, Building 1"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
