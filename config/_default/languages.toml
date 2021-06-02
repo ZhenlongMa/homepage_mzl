@@ -29,7 +29,7 @@
         url = "/post/"
         weight = 50
 
-    [[main]]
+    [[zh.menu.main]]
         name = "联系方式"
         url = "#contact"
         weight = 60
