@@ -23,3 +23,13 @@
         name = "工程项目"
         url = "/prj/"
         weight = 30
+
+    [[zh.menu.main]]
+        name = "博客"
+        url = "/post/"
+        weight = 50
+
+    [[main]]
+        name = "联系方式"
+        url = "#contact"
+        weight = 60

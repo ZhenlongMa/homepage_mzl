@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Zhenlong Ma
+title: 马振龙
 
 # Username (this should match the folder name)
 authors:
@@ -10,26 +10,26 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD Candidate of Computer Architecture
+role: 计算机系统结构博士生
 
 # Organizations/Affiliations
 organizations:
-- name: Institute of Computing Technology, Chinese Academy of Scienses
+- name: 中国科学院计算技术研究所
   url: "http://english.ict.cas.cn/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
 
 interests:
-- Computer Network
-- Computer Architecture
-- Remote Direct Memory Access
+- 计算机网络
+- 计算机体系结构
+- RDMA
 - InfiniBand
 
 education:
   courses:
-  - course: BSc in Electronic Engineering
-    institution: Zhejiang University
+  - course: 电子科学与技术 学士
+    institution: 浙江大学
     year: 2019
 
 # Social/Academic Networking
@@ -76,7 +76,5 @@ user_groups:
 #   - wowchemycms_config
 #   - HTML
 ---
-
-Zhenlong Ma is a Ph.D candidate of Computer Architecture in Institute of Computing Technology, Chinese Academy of Scienses. His research interests include computer network and computer architecture. He has no research result until now.
 
 马振龙是一位计算机系统结构方向的在读博士生，就读于中国科学院计算技术研究所。研究兴趣包括计算机网络和计算机体系结构。目前尚无研究成果。
