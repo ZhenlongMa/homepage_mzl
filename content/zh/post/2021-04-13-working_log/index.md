@@ -1,6 +1,6 @@
 ---
-title: Working Log
-summary: Here I record my work and study. Try my best to write 100 words every day!
+title: 工作日志
+summary: 每日一百字
 
 authors:
 
@@ -25,10 +25,10 @@ header:
   image: ""
 ---
 # 2021
-## April 8
-- Finish slave_monitor.
-## April 9
-- Finish blog building;
-- Finish initial ref model.
+## 4月8日
+- 完成slave_monitor.
+## 4月9日
+- 完成博客搭建
+- 完成参考模型最初版本.
 ## April 18
 - If the endnode lies inside the network, the network is direct network, otherwize it is indirect network.
