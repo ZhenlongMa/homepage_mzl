@@ -14,6 +14,8 @@ comments: true
 profile: true
 share: false
 
+headless : true
+
 
 # Optional header image (relative to `static/img/` folder).
 header:
