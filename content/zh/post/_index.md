@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: 马振龙的博客
 
 # View.
 #   1 = List
@@ -13,7 +13,7 @@ header:
   image: ""
 ---
 
-> This is Zhenlong Ma's blog. Thanks for visiting!
+<!-- > This is Zhenlong Ma's blog. Thanks for visiting! -->
 
 <!-- ## _Table of Contents_ -->
 
