@@ -1,6 +1,6 @@
 ---
-title: HCA Verification
-summary: This article is the introduction for my work of verification of HCA.
+title: HCA验证平台
+summary: 本文介绍HCA的验证工作
 #authors:
 #- admin
 
@@ -21,10 +21,10 @@ header:
   image: ""
 ---
 
-## **1. HanGu HCA Introduction**
-Host Channel Adapter(HCA) is the software/hardware interface between IB network and host. Our HCA - HanGu HCA - supports up to 16K QPs and bandwidth with 100Gbps. Different from widely-known NIC, HCA provides address translation and protection machanism, through which applications can send data to HCA without the involvement of OS.
+## **1. 函谷HCA介绍**
+HCA是IB网络与主机之间的软硬件交互接口。我们的函谷HCA支持最多16K个QP和100Gbps的带宽。HCA卸载了地址转换和翻译功能，通过此功能网络数据可以旁路操作系统直接将数据写入内存。
 
-## **2. HCA Verification**
-My verification framework is built based on Universal Verification Methodology(UVM). Compared with raw systemverilog, UVM
+## **2. 函谷HCA验证**
+验证平台基于UVM搭建，整体结构图如下：
 
 {{< figure src="framework.jpg" caption="Verification Framework" numbered="true" height="75%" width="75%" >}}
