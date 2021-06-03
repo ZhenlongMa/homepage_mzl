@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
-title = "Skills"
+title = "知识技能"
 subtitle = ""
 
 # Showcase personal skills or business features.
@@ -23,19 +23,19 @@ subtitle = ""
 [[feature]]
   icon = "laptop-code"
   icon_pack = "fas"
-  name = "Operating System"
+  name = "操作系统"
   description = "20%"
 
 [[feature]]
   icon = "sitemap"
   icon_pack = "fas"
-  name = "Computer Network"
+  name = "计算机网络"
   description = "30%"
 
 [[feature]]
   icon = "server"
   icon_pack = "fas"
-  name = "Computer Architecture"
+  name = "计算机体系结构"
   description = "30%"
 
 # Uncomment to use emoji icons.

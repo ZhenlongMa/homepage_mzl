@@ -15,7 +15,7 @@ role: 计算机系统结构博士生
 # Organizations/Affiliations
 organizations:
 - name: 中国科学院计算技术研究所
-  url: "http://english.ict.cas.cn/"
+  url: "http://www.ict.ac.cn/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
