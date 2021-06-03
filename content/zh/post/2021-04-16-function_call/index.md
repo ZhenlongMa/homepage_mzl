@@ -1,6 +1,6 @@
 ---
-title: Function Call in Fork-Join in SystemVerilog
-summary: The issue of parameter passing in function call.
+title: SystemVerilog的fork-join语句中的函数调用
+summary: 解释并解决使用SV时出现的一种变量异常赋值。
 
 date: ""
 publishDate: "2021-04-16T14:33:00+08:00"
@@ -20,7 +20,7 @@ private: false
 tags:
 - technical issue
 ---
-It should be noticed when call a function in fork statement in systemverilog. Take below as an example:
+当使用SystemVerilog时，在fork语句中调用函数时需要注意，例如：
 ```verilog
 module test1;
     initial begin
@@ -37,6 +37,5 @@ module test1;
         end
 endmodule
 ```
-If consider this piece of code as usual, the output should be `0, 1, 2`. However, the actual output is `2, 2, 2`. That is because static variable k is allocated memory space **only once**. The child process in fork...join_none executes **not until the execution of parent process finishes**, so all child processes get k=2 when their executions begin.
-
-A solution for this problem is to use `automatic` variable: `automatic int k = j`. Creation of `automatic` type variables **come front of any procedure statements**, and executes **concurrently with parent process**.
+这段程序可能很多人认为会输出`0, 1, 2`，但是实际的输出是`2, 2, 2`。原因是这段程序**只给静态变量k分配一次内存空间**，而fork join语句中的程序**只有当父线程执行结束之后才执行**，所以所有的子线程拿到的k值都是2。
+要解决这个问题可以使用`automatic`类型的变量：`automatic int k = j`。`automatic`类型的变量在所有过程语句之前创建，并且与父线程同时进行。

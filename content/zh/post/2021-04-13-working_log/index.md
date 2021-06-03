@@ -30,5 +30,3 @@ header:
 ## 4月9日
 - 完成博客搭建
 - 完成参考模型最初版本.
-## April 18
-- If the endnode lies inside the network, the network is direct network, otherwize it is indirect network.
