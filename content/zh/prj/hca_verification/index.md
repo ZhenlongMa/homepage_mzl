@@ -1,6 +1,9 @@
 ---
 title: HCA验证平台
 summary: 本文介绍HCA的验证工作
+date: ""
+publishDate: "2021-06-03T14:33:0011:34:00+08:00"
+lastmod: ""
 #authors:
 #- admin
 

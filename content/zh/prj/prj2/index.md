@@ -1,6 +1,9 @@
 ---
 title: 第二个项目
 summary: 这是第二个项目
+date: ""
+publishDate: "2021-06-01T14:33:0011:34:00+08:00"
+lastmod: ""
 #authors:
 #- admin
 
@@ -14,7 +17,10 @@ comments: true
 profile: true
 share: false
 
-headless : true
+featured: false
+headless: false
+draft: false
+private: false
 
 
 # Optional header image (relative to `static/img/` folder).
