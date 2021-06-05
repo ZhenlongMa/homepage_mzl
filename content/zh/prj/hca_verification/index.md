@@ -23,7 +23,7 @@ header:
   caption: ""
   image: ""
 
-tags:
+categories:
 - 验证
 ---
 
