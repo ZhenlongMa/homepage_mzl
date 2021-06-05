@@ -30,6 +30,8 @@ education:
   courses:
   - course: 电子科学与技术 本科
     institution: 浙江大学
+    institution_url:
+    logo: zju_logo.png
     year: 2019
 
 # Social/Academic Networking

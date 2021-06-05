@@ -30,6 +30,7 @@ education:
   courses:
   - course: BSc in Electronic Engineering
     institution: Zhejiang University
+    logo: zju_logo.png
     year: 2019
 
 # Social/Academic Networking
