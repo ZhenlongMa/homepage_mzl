@@ -214,6 +214,7 @@ plugins_js  = []
   post_view = 2
   publication_view = 2
   talk_view = 2
+  prj_view = 2
 
 ############################
 ## Comments
