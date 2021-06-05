@@ -4,6 +4,10 @@ summary: This article is the introduction for my work of verification of HCA.
 #authors:
 #- admin
 
+date: ""
+publishDate: "2021-06-03T14:33:00+08:00"
+lastmod: ""
+
 # View.
 #   1 = List
 #   2 = Compact
