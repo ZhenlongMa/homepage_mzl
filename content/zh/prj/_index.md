@@ -1,6 +1,7 @@
 ---
 title: 工程项目
 
+type: post
 # View.
 #   1 = List
 #   2 = Compact
@@ -13,7 +14,7 @@ header:
   image: ""
 
 # content:
-type: post
+
 ---
 
 > 下述为本人参与的工程项目
