@@ -1,7 +1,7 @@
 ---
 title: 工程项目
 
-type: post
+type: "post"
 # View.
 #   1 = List
 #   2 = Compact
