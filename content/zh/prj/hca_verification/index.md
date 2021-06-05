@@ -2,7 +2,7 @@
 title: HCA验证平台
 summary: 本工作对课题组开发的网卡作RTL级验证，使用UVM产生对网卡的输入激励并比对输出结果。
 date: ""
-publishDate: "2021-06-03T14:33:0011:34:00+08:00"
+publishDate: "2021-06-03T14:33:00+08:00"
 lastmod: ""
 #authors:
 #- admin
