@@ -21,6 +21,7 @@ tags:
 ---
 
 # 诗
+---
 
 <center>
 
@@ -51,6 +52,7 @@ tags:
 </center>
 
 # 词
+---
 
 <center>
 
