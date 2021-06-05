@@ -13,7 +13,7 @@ header:
   image: ""
 
 # content:
-
+type: posts
 ---
 
 > 下述为本人参与的工程项目
