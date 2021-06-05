@@ -11,6 +11,8 @@ view: 2
 header:
   caption: ""
   image: ""
+
+type: default
 ---
 
 > 图难于其易，为大于其细
