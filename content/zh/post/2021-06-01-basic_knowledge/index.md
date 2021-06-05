@@ -13,10 +13,10 @@ share: false
 
 featured: false
 headless: false
-draft: true
+draft: false
 private: false
 ---
 
-# 词典
+Virtual Protocol Interconnect：Mellanox提出的一种架构，在VPI网卡或交换机上同一个端口上能在IB和以太网语义之间切换。
 
-Virtual Protocol Interconnect：同一个端口上能同时运行IB协议和以太网协议（待完善）。
+目前RDMA广泛使用的实现方式有三种：InfiniBand，RoCE，iWARP。这三种实现方式底层的物理层和链路层不同，但向上层提供了相同的API，即verbs。

@@ -13,7 +13,7 @@ share: false
 
 featured: false
 headless: false
-draft: true
+draft: false
 private: false
 ---
 # Part I - Unnecessary Words
