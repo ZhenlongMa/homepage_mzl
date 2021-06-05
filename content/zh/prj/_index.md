@@ -12,7 +12,7 @@ header:
   caption: ""
   image: ""
 
-content:
+# content:
 
 ---
 
