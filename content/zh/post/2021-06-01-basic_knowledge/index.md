@@ -2,7 +2,7 @@
 title: 基础知识
 summary: 此处记录日常学习工作中积累的基础背景知识
 date: ""
-publishDate: "2021-06-01T14:33:0011:34:00+08:00"
+publishDate: "2021-06-01T14:33:00+08:00"
 lastmod: ""
 
 view: 2

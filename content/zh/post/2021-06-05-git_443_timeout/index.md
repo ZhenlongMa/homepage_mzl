@@ -1,8 +1,8 @@
 ---
 title: failed to connect to github.com port 443的解决办法
 summary: 
-date: "2021-06-05T15:01:0011:34:00+08:00"
-publishDate: "2021-06-05T15:01:0011:34:00+08:00"
+date: "2021-06-05T15:01:00+08:00"
+publishDate: "2021-06-05T15:01:00+08:00"
 lastmod: ""
 
 view: 2
