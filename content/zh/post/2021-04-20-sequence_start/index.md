@@ -15,8 +15,8 @@ header:
   caption: ""
   image: ""
 ---
-{{< figure src="sequence_flow.png" caption="Sequence执行过程" numbered="true" height="75%" width="75%" >}}
-`start()`任务的原型如下：
+
+在UVM中，可以通过`start()`方法启动一个sequence，`start()`任务的原型如下：
 
 ```verilog
 virtual task start ( uvm_sequencer_base sequencer,
@@ -25,21 +25,10 @@ virtual task start ( uvm_sequencer_base sequencer,
                      bit                call_pre_post = 1       );
 ```
 
-第一个参数sequencer必须设置，其他三个都是可选项。在调用`seq.start()`之后，将会按顺序执行以下函数：
-
-```verilog
-seq.pre_start();
-seq.pre_body();                 // if call_pre_post == 1
-    parent_seq.pre_do();        // if parent_seq != null
-    parent_seq_mid_do(this);    // if parent_seq != null
-seq.bosy();
-    parent_seq_post_do(this);   // if parent_seq != null
-seq.post_body();                // if call_pre_post == 1
-sub_seq.post_start();
-```
+其中第一个参数sequencer必须设置，其他三个都是可选项。在调用`seq.start()`之后，将会按顺序执行：`seq.prestert()` -> `seq.pre_body()` -> `parent_seq.pre_do()` -> `parent_seq.mid_do(this)` -> `seq.body()` -> `parent_seq.post_do(this)` -> `seq.post_body()` -> `sub_seq.post_start()`。其中`pre_start()`、`body()`、`post_start()`函数无条件执行，`pre_body()`和`post_body()`函数只有在启动当前sequence时将`call_pre_post`设为1才会执行，而将parent_sequence设置为特定的父sequence时在子sequence的body()函数前后将会执行这个特定的父sequence中的`pre_do()`、`mid_do()`和`post_do()`函数。如下图所示：
 
 
-
+{{< figure src="sequence_flow.png" caption="Sequence执行过程" numbered="true" height="75%" width="75%" >}}
 
 
 Reference:
