@@ -25,6 +25,8 @@ header:
 
 categories:
 - 验证
+tags:
+- 验证
 ---
 
 ## **1. 函谷HCA介绍**
