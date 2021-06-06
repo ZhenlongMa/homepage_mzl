@@ -29,7 +29,7 @@ virtual task start ( uvm_sequencer_base sequencer,
 
 其中`pre_start()`、`body()`、`post_start()`函数无条件执行，`pre_body()`和`post_body()`函数只有在启动当前sequence时将`call_pre_post`设为1才会执行，而将parent_sequence设置为特定的父sequence时在子sequence的body()函数前后将会执行这个特定的父sequence中的`pre_do()`、`mid_do()`和`post_do()`函数。
 
-例如seq1的`body()`函数中启动了seq2并把自己设为seq2的父sequence的整体执行流程如下图所示：
+例如，在seq1的`body()`函数中启动了seq2，并把自己设为seq2的父sequence，那么整体执行流程如下图所示：
 
 
 {{< figure src="sequence_flow.png" caption="Sequence执行过程" numbered="true" height="75%" width="75%" >}}
