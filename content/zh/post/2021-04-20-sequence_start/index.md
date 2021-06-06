@@ -1,7 +1,8 @@
 ---
 title: UVM sequence启动过程
-summary: UVM中启动sequence时各个task或function的执行顺序
+summary: UVM中启动sequence时各个函数的执行顺序
 publishDate: "2021-04-20T12:29:00Z"
+lastmod: "2021-06-03T14:33:00+08:00"
 
 view: 2
 
