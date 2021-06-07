@@ -2,7 +2,7 @@
 name = "mzl_serif"
 
 # Optional Google font URL
-google_fonts = "family=Noto+Serif+SC"
+google_fonts = "Noto+Serif+SC"
 
 # Font families
 heading_font = "Noto Serif SC"
