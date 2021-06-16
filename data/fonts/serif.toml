@@ -5,7 +5,7 @@ name = "Serif"
 google_fonts = "Noto+Serif+SC|Roboto:400,700"
 
 # Font families
-heading_font = "Noto Serif SC"
+heading_font = "Roboto"
 body_font = "Noto Serif SC"
-nav_font = "Roboto"
+nav_font = "Noto Serif SC"
 mono_font = "Noto Serif SC"
