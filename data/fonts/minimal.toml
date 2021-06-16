@@ -2,7 +2,7 @@
 name = "Minimal"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto+Mono|Roboto:400700"
+google_fonts = "Montserrat:400,700|Roboto+Mono|Roboto:400,700"
 
 # Font families
 heading_font = "Montserrat"
