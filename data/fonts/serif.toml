@@ -2,7 +2,7 @@
 name = "Serif"
 
 # Optional Google font URL
-google_fonts = "Noto+Serif+SC"
+google_fonts = "Noto+Serif+SC|Roboto:400,700"
 
 # Font families
 heading_font = "Noto Serif SC"
