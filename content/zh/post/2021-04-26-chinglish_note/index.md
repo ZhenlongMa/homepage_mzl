@@ -17,7 +17,7 @@ draft: false
 private: false
 ---
 
-{{< figure src="chinglish_book.jpg" caption="" numbered="false" height="75%" width="75%" >}}
+{{< figure src="chinglish_book.jpg" caption="" numbered="false" height="50%" width="50%" >}}
 
 最近在读Joan Pinkham写的中式英语之鉴（The Translator's Guide to Chinglish），这本书比较详细地指出了大多数中国人在写作英文文章时普遍会犯的一些非语法错误，这些错误往往让写作者以佶屈聱牙的方式表达却不自知。书中对每一类型的错误都提供了几十个例句，甚至例句的篇幅占据了整本书的一半。这本书虽然封面是北外考研用书，但是书中并没有很多高深的词汇或者句法，非英语专业的人以至高中生都能轻松读懂。
 
