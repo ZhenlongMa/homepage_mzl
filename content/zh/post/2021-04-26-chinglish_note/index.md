@@ -31,7 +31,13 @@ private: false
 
 一个优秀的作家应该追求精准，用尽量少的语言表达自己的意思。但是从中文翻译过来的英文文章充满着冗余词，以至于冗余词成为了中式英语的hallmark。冗余词可能在句子任何地方出现，可能是名词、动词、形容词、副词等等。
 
-句子中的修饰成分中可能会出现冗余名词。例如to accelerate the pace of economic reform这句话中accelerate就已经可以表达the pace of的意思，应该修改为to accelerate economic reform。以及there have been good harvests in agriculture这句话中，harvest就是农业收获的意思，后面再加上in agriculture就很奇怪。抽象名词应该特别注意，
+### **冗余名词**
+
+句子中的修饰成分中可能会出现冗余名词。例如
+>to accelerate the pace of economic reform
+这句话中*accelerate*就已经可以表达*the pace of*的意思，应该修改为
+>to accelerate economic reform
+以及there have been good harvests in agriculture这句话中，harvest就是农业收获的意思，后面再加上in agriculture就很奇怪。抽象名词应该特别注意，
 
 ---
 
