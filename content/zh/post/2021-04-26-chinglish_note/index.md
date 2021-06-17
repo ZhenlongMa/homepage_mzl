@@ -25,7 +25,6 @@ private: false
 
 全书内容分为两部分，第一部分关于冗余词，第二部分关于句子结构。
 
----
 
 ## **冗余词**
 
@@ -35,8 +34,19 @@ private: false
 
 句子中的修饰成分中可能会出现冗余名词。例如*to accelerate **the pace of** economic reform*这句话中*accelerate*就已经可以表达*the pace of*的意思。以及*there have been good harvests **in agriculture***里面的*harvest*就是农业收获的意思，后面再加上*in agriculture*显得很奇怪，就好像“两个国家爆发了军事上的战争”。
 
-抽象名词应该特别注意，这是冗余词的高发区。*it is essential to strengthen **the building of** national defence*
+宏观抽象名词应该特别注意，这是冗余词的高发区，这种名词往往作为对一个具体名词的修饰：*reforms in **the sphere of** economy*。
+
+### **冗余动词**
+
+
+
 
 ---
+
+很多句子用中文表达我们并不觉得不妥，因为我们习惯了那些毫无意义的修饰。加快现代化国家建设的步伐。
+
+习近平谈治国理政：
+
+
 
 边读边总结，未完待续……
