@@ -33,9 +33,9 @@ private: false
 
 ### **冗余名词**
 
-句子中的修饰成分中可能会出现冗余名词。例如*to accelerate the pace of economic reform*这句话中*accelerate*就已经可以表达*the pace of*的意思，应该修改为：*to accelerate economic reform*。以及*there have been good harvests in agriculture*里面的*harvest*就是农业收获的意思，后面再加上*in agriculture*就很奇怪。
+句子中的修饰成分中可能会出现冗余名词。例如*to accelerate **the pace of** economic reform*这句话中*accelerate*就已经可以表达*the pace of*的意思。以及*there have been good harvests **in agriculture***里面的*harvest*就是农业收获的意思，后面再加上*in agriculture*显得很奇怪，就好像“两个国家爆发了军事上的战争”。
 
-抽象名词应该特别注意，这是冗余词的高发区。
+抽象名词应该特别注意，这是冗余词的高发区。*it is essential to strengthen **the building of** national defence*
 
 ---
 
