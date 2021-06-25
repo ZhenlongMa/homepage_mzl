@@ -13,7 +13,7 @@ share: false
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 ---
 
@@ -25,5 +25,7 @@ BlueField芯片中集成了8个A72核和一个ConnectX-6网卡，它和主机之
 
 
 参考资料：
+
 [1] https://www.nextplatform.com/2021/05/24/testing-the-limits-of-the-bluefield-2-smartnic/
+
 [2] Performance Characteristic of the BlueField-2 SmartNIC
