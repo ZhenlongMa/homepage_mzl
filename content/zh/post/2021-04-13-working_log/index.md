@@ -14,6 +14,9 @@ comments: true
 profile: true
 share: false
 
+gitment: true
+slug: working-log
+
 featured: false
 headless: false
 draft: false
