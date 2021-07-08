@@ -10,6 +10,9 @@ comments: true
 profile: true
 share: false
 
+gitment: true
+slug: uvm-sequence
+
 headless: false
 # Optional header image (relative to `static/img/` folder).
 header:

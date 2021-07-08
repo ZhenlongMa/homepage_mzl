@@ -31,6 +31,8 @@ Linux内核不支持TCP卸载，Windows也取消了这一支持。
 
 在英伟达的世界观中，DPU是与CPU和GPU并列的第三个处理器，CPU代表通用处理，GPU代表并行处理，而DPU代表通信密集型处理。一个DPU包含一个多核CPU、一个高性能网络接口和一个可编程硬件加速引擎。DPU中搭载的CPU应该仅仅负责配置控制通路和处理例外[1]。
 
+Fungible Nvidia Pensando Nebulon
+
 
 
 # 参考资料
