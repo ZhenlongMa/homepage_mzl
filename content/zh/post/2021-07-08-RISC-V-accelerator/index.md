@@ -22,6 +22,10 @@ headless: false
 draft: false
 private: false
 
+tags:
+- 智能网卡
+- 论文笔记
+
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
