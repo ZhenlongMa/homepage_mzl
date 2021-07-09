@@ -36,7 +36,7 @@ header:
   image: ""
 ---
 
-2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型sPIN，2021年此团队使用verilog实现了与此编程模型相对接的硬件PsPIN。
+2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型sPIN，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)。
 
 ## **背景**
 
