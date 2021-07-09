@@ -44,4 +44,4 @@ header:
 
 目前在网计算的工作可以由四个维度进行衡量：位置、可编程性、计算粒度和可用性。位置可以分为计算逻辑在网络设备的数据路径上、在网络设备但不在数据路径上以及在主机上。在可编程性方面，
 
-{{< figure src="four-dimension.jpg" caption="**几种在网计算工作总结**" numbered="false" height="100%" width="100%" >}}
+{{< figure src="four-dimension.jpg" caption="**几种在网计算工作总结**" numbered="true" height="100%" width="100%" >}}
