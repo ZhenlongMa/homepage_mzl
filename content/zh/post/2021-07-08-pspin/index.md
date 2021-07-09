@@ -60,4 +60,4 @@ PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的
 
 ### **接收**
 
-inbound engine处理网络接收到的数据包，对数据包进行判断，如果满足计算条件则转存在PsPIN Unit中的packet buffer中，并向Packet Scheduler发送一个包含数据包指针以及运行上下文的处理请求（Handler Execution Request, HER）。
+inbound engine处理网络接收到的数据包，对数据包进行判断，如果满足计算条件则转存在PsPIN Unit中的packet buffer中，并向包调度器（Packet Scheduler）发送一个包含数据包指针以及运行上下文的处理请求（Handler Execution Request, HER），之后由包调度器选择特定的cluster进行计算。
