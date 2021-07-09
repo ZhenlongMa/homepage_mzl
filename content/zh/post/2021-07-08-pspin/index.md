@@ -54,6 +54,6 @@ sPIN将RDMA语义扩展，允许用户自定义简单的包处理任务，这些
 
 ## **PsPIN**
 
-PsPIN基于PULP使用RISC-V作为在网计算的处理单元。
+PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的硬件架构图。L2 handler memory中存储handler需要的数据，program memory中存储handler程序。两者都准备好后，主机下发运行上下文，其中包含数据包计算条件和内存信息。
 
 {{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="75%" width="75%" >}}
