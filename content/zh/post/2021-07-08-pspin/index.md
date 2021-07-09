@@ -36,7 +36,7 @@ header:
   image: ""
 ---
 
-2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型sPIN，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)。
+2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN]()，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)。
 
 ## **背景**
 
@@ -58,6 +58,6 @@ PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的
 
 {{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="75%" width="75%" >}}
 
-### **接收**
-
 inbound engine处理网络接收到的数据包，对数据包进行判断，如果满足计算条件则转存在PsPIN Unit中的packet buffer中，并向包调度器（Packet Scheduler）发送一个包含数据包指针以及运行上下文的处理请求（Handler Execution Request, HER），之后由包调度器选择特定的cluster进行计算。
+
+{{< figure src="control-path.jpg" caption="**PsPIN Unit控制路径**" numbered="true" height="75%" width="75%" >}}
