@@ -46,3 +46,14 @@ header:
 
 {{< figure src="four-dimension.jpg" caption="**几种在网计算工作总结**" numbered="true" height="100%" width="100%" >}}
 
+## **sPIN**
+
+sPIN将RDMA语义扩展，允许用户自定义简单的包处理任务，这些任务称为handler。handler在主机上交叉编译。对每一种消息需要分别对包头、负载和包尾定义三种handler，消息描述符中含有需要进行的handler的信息。
+
+// sPIN介绍待细化
+
+## **PsPIN**
+
+PsPIN基于PULP使用RISC-V作为在网计算的处理单元。
+
+{{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="100%" width="100%" >}}
