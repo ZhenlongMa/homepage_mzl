@@ -42,6 +42,6 @@ header:
 
 在网计算（In-Network Computing）有四个方面的优势：减轻CPU负担、降低延迟、提高吞吐量以及减少资源利用。
 
-目前在网计算的工作可以由四个维度进行衡量：位置、可编程性、计算粒度和可用性。
+目前在网计算的工作可以由四个维度进行衡量：位置、可编程性、计算粒度和可用性。位置可以分为计算逻辑在网络设备的数据路径上、在网络设备但不在数据路径上以及在主机上。
 
-{{< figure src="four-dimension.jpg" caption="几种在网计算工作总结" numbered="false" height="50%" width="50%" >}}
+{{< figure src="four-dimension.jpg" caption="几种在网计算工作总结" numbered="false" height="100%" width="100%" >}}
