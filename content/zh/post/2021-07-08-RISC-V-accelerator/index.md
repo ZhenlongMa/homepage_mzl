@@ -38,6 +38,10 @@ header:
 
 2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型sPIN，2021年此团队使用verilog实现了与此编程模型相对接的硬件PsPIN。
 
-## 背景
+## **背景**
 
-在网计算（In-Network Computing）有四个方面的优势：
+在网计算（In-Network Computing）有四个方面的优势：减轻CPU负担、降低延迟、提高吞吐量以及减少资源利用。
+
+目前在网计算的工作可以由四个维度进行衡量：位置、可编程性、计算粒度和可用性。
+
+{{< figure src="four-dimension.jpg" caption="几种在网计算工作总结" numbered="false" height="50%" width="50%" >}}
