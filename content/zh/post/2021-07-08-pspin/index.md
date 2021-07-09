@@ -56,4 +56,4 @@ sPIN将RDMA语义扩展，允许用户自定义简单的包处理任务，这些
 
 PsPIN基于PULP使用RISC-V作为在网计算的处理单元。
 
-{{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="100%" width="100%" >}}
+{{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="75%" width="75%" >}}
