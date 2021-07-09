@@ -57,3 +57,7 @@ sPIN将RDMA语义扩展，允许用户自定义简单的包处理任务，这些
 PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的硬件架构图。每一个Cluster中包含多个HPU，一个HPU是一个32位单发射顺序RISC-V核。L2 handler memory中存储handler需要的数据，program memory中存储handler程序，packet buffer存储需要处理的数据包。前两者都准备好后，主机向网卡配置运行上下文，其中包含数据包计算条件和内存信息。
 
 {{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="75%" width="75%" >}}
+
+### **接收**
+
+inbound engine处理网络接收到的数据包，对数据包进行判断，如果满足计算条件则转存在PsPIN Unit中的packet buffer中，并向Packet Scheduler发送一个包含数据包指针以及运行上下文的处理请求（Handler Execution Request, HER）。
