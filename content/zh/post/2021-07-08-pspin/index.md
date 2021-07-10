@@ -54,10 +54,12 @@ sPIN将RDMA语义扩展，允许用户自定义简单的包处理任务，这些
 
 ## **PsPIN**
 
-PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的硬件架构图。每一个Cluster中包含多个HPU，一个HPU是一个32位单发射顺序RISC-V核。L2 handler memory中存储handler需要的数据，program memory中存储handler程序，packet buffer存储需要处理的数据包。前两者都准备好后，主机向网卡配置运行上下文，其中包含数据包计算条件和内存信息。
+PsPIN基于PULP使用RISC-V作为在网计算的处理单元。下图为PsPIN的硬件架构图。每一个集群（cluster）中包含多个HPU，一个HPU是一个32位单发射顺序RISC-V核。图中共有四个集群，每一个集群中有8个HPU。L2 handler memory中存储handler需要的数据，program memory中存储handler程序，packet buffer存储需要处理的数据包。前两者都准备好后，主机向网卡配置运行上下文，其中包含数据包计算条件和内存信息。
 
 {{< figure src="arch.jpg" caption="**PsPIN架构**" numbered="true" height="75%" width="75%" >}}
 
 inbound engine处理网络接收到的数据包，对数据包进行判断，如果满足计算条件则转存在PsPIN Unit中的packet buffer中，并向包调度器（Packet Scheduler）发送一个包含数据包指针以及运行上下文的处理请求（Handler Execution Request, HER），之后由包调度器选择特定的集群进行计算。为了尽量避免同一条消息的数据包调度到不同集群从而引发跨集群访存，每一条消息指定一个首位集群（home cluster），包调度器优先将此消息调度至首位集群中，如果首位集群的L1没有足够的空间容纳数据包，则会调度至负载最少的集群。
 
-{{< figure src="control-path.jpg" caption="**PsPIN Unit控制路径**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="control-path.jpg" caption="**PsPIN Unit架构**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="cluster.jpg" caption="**cluster内部架构**" numbered="true" height="75%" width="75%" >}}
