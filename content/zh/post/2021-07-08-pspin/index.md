@@ -23,7 +23,7 @@ slug: PsPIN-cn
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 
 tags:
@@ -36,7 +36,7 @@ header:
   image: ""
 ---
 
-2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)。
+2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)，这项工作目前尚未发表，仍然收录在Arxiv中。
 
 ## **背景**
 
