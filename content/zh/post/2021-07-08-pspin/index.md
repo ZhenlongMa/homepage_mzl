@@ -74,6 +74,8 @@ HPU执行分为四部分：1、从HPU driver中获取handler函数指针；2、�
 
 {{< figure src="cluster.jpg" caption="**集群内部架构**" numbered="true" height="75%" width="75%" >}}
 
+L2 packet buffer是影响数据通路性能的最大瓶颈，因此要保证这一部分内存的高带宽。PsPIN
+
 {{< figure src="data-path.jpg" caption="**互联架构**" numbered="true" height="75%" width="75%" >}}
 
 ## **评测**
