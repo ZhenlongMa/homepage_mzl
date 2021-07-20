@@ -66,7 +66,11 @@ inbound engine处理网络接收到的数据包，对数据包进行判断，如
 
 ### **RISC-V集群**
 
-包调度器选择一个特定的集群后，此集群通过DMA将数据包从L2读取到L1中，从而能够单周期访存。
+包调度器选择一个特定的集群后，此集群通过DMA将数据包从L2读取到L1中，从而能够单周期访存。集群内调度由硬件完成，因为软件调度开销过大。
+
+HPU执行分为四部分：1、从HPU driver中获取handler函数指针；2、准备数据包指针；3、调用handler函数；4、向HPU driver发送完成门铃。HPU在这四个步骤之间循环。当一个handler执行完毕之后，由于有可能handler会向网络端或者主机发送消息，HPU driver等待这一部分任务结束之后向MPQ Engine发送一个完成信号。
+
+在HPU集群内部有三个需要处理的问题：非法访存、数据包乱序和非线速处理。
 
 {{< figure src="cluster.jpg" caption="**集群内部架构**" numbered="true" height="75%" width="75%" >}}
 
