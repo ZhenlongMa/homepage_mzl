@@ -39,7 +39,7 @@ header:
 <!-- # 目录
 - [A RISC-V In-Network Accelerator for Flexible High-Performance Low-Power Packet Processing](#背景) -->
 
-{{< toc >}}
+<!-- {{< toc >}} -->
 
 2017年苏黎世联邦理工学院的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)，这项工作目前尚未发表，仍然收录在Arxiv中。
 
@@ -83,7 +83,7 @@ L2 packet buffer是影响数据通路性能的最大瓶颈，因此要保证这�
 
 {{< figure src="data-path.jpg" caption="**互联架构**" numbered="true" height="75%" width="75%" >}}
 
-由于PsPIN是一个标准网卡附加的硬件，它对于网卡有一定要求。
+由于PsPIN是一个标准网卡附加的硬件，它对于网卡有一定要求。//待补充
 
 ## **评测**
 
@@ -110,4 +110,9 @@ inbound吞吐量测试表明对于64字节数据输入，处理单元有32条指
 
 {{< figure src="inbound-throughput.jpg" caption="**输入吞吐量随数据包大小的变化**" numbered="true" height="75%" width="75%" >}}
 
+对于输出吞吐量，文章给的解释是由于L1的字长是32位，对于小包会频繁遇到bank conflict，导致吞吐量降低，随着数据包增大，时间预算足够L1处理bank conflict，因此吞吐量增加。
+
 {{< figure src="outbound-throughput.jpg" caption="**输出吞吐量随数据包大小的变化**" numbered="true" height="75%" width="75%" >}}
+
+### **实际应用**
+
