@@ -23,7 +23,7 @@ slug: PsPIN-cn
 
 featured: false
 headless: false
-draft: true
+draft: false
 private: false
 
 tags:
