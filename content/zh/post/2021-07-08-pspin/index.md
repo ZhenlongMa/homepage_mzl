@@ -93,6 +93,7 @@ PsPIN的评测基于由SystemVerilog搭建的时钟精确模拟器进行。
 
 在延迟方面，从PsPIN接收到HER到inbound engine接收到完成信号之间的时间间隔为26ns（64B）到40ns（1024B）。其中时间分布如下：
 
+
 |   时延   |   过程   |
 |---------|----------|
 |3ns|处理请求到达CSCHED|
@@ -101,8 +102,12 @@ PsPIN的评测基于由SystemVerilog搭建的时钟精确模拟器进行。
 |1ns|handler通知HPU driver完成信号|
 |1ns|HPU driver通知inbound engine完成信号|
 
-其中如果有HPU或者集群之间的仲裁还会引入6ns和2ns的时延。但是这些和上面提到的26ns和40ns不匹配，不知道是如何计算的。并且这里忽略了对数据进行处理引入的时延。
+其中如果有HPU或者集群之间的仲裁还会引入6ns和2ns的时延。但是这些和上面提到的26ns和40ns不匹配，不清楚是如何计算的。并且这里忽略了对数据进行处理引入的时延。
 
 ### **吞吐量**
 
+inbound吞吐量测试表明对于64字节数据输入，处理单元有32条指令的时间裕度，对于1024字节数据，有大约512条指令的时间裕度。
 
+{{< figure src="inbound-throughput.jpg" caption="**输入吞吐量随数据包大小的变化**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="outbound-throughput.jpg" caption="**输出吞吐量随数据包大小的变化**" numbered="true" height="75%" width="75%" >}}
