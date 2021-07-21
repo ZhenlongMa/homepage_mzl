@@ -36,7 +36,10 @@ header:
   image: ""
 ---
 
-[TOC]
+<!-- # 目录
+- [A RISC-V In-Network Accelerator for Flexible High-Performance Low-Power Packet Processing](#背景) -->
+
+<!-- {{< toc >}} -->
 
 2017年苏黎世联邦理工学院的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)，这项工作目前尚未发表，仍然收录在Arxiv中。
 
@@ -86,3 +89,14 @@ L2 packet buffer是影响数据通路性能的最大瓶颈，因此要保证这�
 
 PsPIN的评测基于由SystemVerilog搭建的时钟精确模拟器进行。
 
+在延迟方面，从PsPIN接收到HER到inbound engine接收到完成信号之间的时间间隔为26ns（64B）到40ns（1024B）。其中时间分布如下：
+
+|   时延   |   过程   |
+|---------|----------|
+|3ns|处理请求到达CSCHED|
+|12ns~26ns|数据包拷贝到L1|
+|7ns|准备handler|
+|1ns|handler通知HPU driver完成信号|
+|1ns|HPU driver通知inbound engine完成信号|
+
+其中如果有HPU或者集群之间的仲裁还会引入6ns和2ns的时延。但是这些和上面提到的26ns和40ns不匹配，不知道是如何计算的。
