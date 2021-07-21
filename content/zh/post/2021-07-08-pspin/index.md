@@ -36,7 +36,9 @@ header:
   image: ""
 ---
 
-2017年ETH的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)，这项工作目前尚未发表，仍然收录在Arxiv中。
+[TOC]
+
+2017年苏黎世联邦理工学院的Hoefler团队提出了一种基于RDMA的在网计算的编程模型[sPIN](https://classes.cs.uoregon.edu/18S/cis631/Documents/spin.pdf)，2021年此团队使用verilog实现了与此编程模型相对接的硬件[PsPIN](https://arxiv.org/pdf/2010.03536.pdf)，这项工作目前尚未发表，仍然收录在Arxiv中。
 
 ## **背景**
 
@@ -74,9 +76,13 @@ HPU执行分为四部分：1、从HPU driver中获取handler函数指针；2、�
 
 {{< figure src="cluster.jpg" caption="**集群内部架构**" numbered="true" height="75%" width="75%" >}}
 
-L2 packet buffer是影响数据通路性能的最大瓶颈，因此要保证这一部分内存的高带宽。PsPIN
+L2 packet buffer是影响数据通路性能的最大瓶颈，因此要保证这一部分内存的高带宽。
 
 {{< figure src="data-path.jpg" caption="**互联架构**" numbered="true" height="75%" width="75%" >}}
 
+由于PsPIN是一个标准网卡附加的硬件，它对于网卡有一定要求。
+
 ## **评测**
+
+PsPIN的评测基于由SystemVerilog搭建的时钟精确模拟器进行。
 
