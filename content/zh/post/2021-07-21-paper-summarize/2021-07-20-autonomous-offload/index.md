@@ -23,7 +23,7 @@ slug: autonomous-offload-cn
 
 featured: false
 headless: false
-draft: true
+draft: false
 private: false
 
 tags:
@@ -35,3 +35,4 @@ header:
   caption: ""
   image: ""
 ---
+123
