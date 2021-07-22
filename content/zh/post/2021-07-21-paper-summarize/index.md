@@ -23,7 +23,7 @@ slug: paper-abstract-cn
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 
 tags:
