@@ -1,6 +1,6 @@
 ---
 title: 论文笔记：A RISC-V In-Network Accelerator for Flexible High-Performance Low-Power Packet Processing
-summary: 论文笔记，将RISV-V核作为DPU处理单元的工作
+summary: 论文笔记，将RISC-V核作为DPU处理单元的工作
 
 authors:
 
@@ -116,3 +116,4 @@ inbound吞吐量测试表明对于64字节数据输入，处理单元有32条指
 
 ### **实际应用**
 
+本文将PsPIN和另外两个x86和ARM的处理器做了对比，在其上运行了多种应用，包括数据聚合、数据削减、数据包过滤、键值对cache、scatter和统计。
