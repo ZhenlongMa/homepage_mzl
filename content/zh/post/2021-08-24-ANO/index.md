@@ -36,9 +36,21 @@ header:
   image: ""
 ---
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/NM11SZu-ABk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/NM11SZu-ABk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> -->
 
+
+
+[视频链接](https://www.youtube.com/watch?v=NM11SZu-ABk&t=43s&ab_channel=BorisPismenny)
 [论文链接](https://dl.acm.org/doi/pdf/10.1145/3445814.3446732)
 
 ## **背景**
 
+在计算机网络五层模型中，第五层协议（Layer 5 Protocol, L5P）包含了众多数据密集型计算，例如加解密、串/并行化、哈希计算和压缩/解压缩等，它们占用了大量的CPU计算时间。并且第五层协议内部也有依赖关系，比如HTTPS协议基于同是L5P的TLS协议，所以数据密集型计算影响绝大多数L5P的性能。如果能将L5P协议进行网卡卸载，一方面可以节省大量CPU资源，另一方面可以提升基于它们的应用整体的性能。
+
+{{< figure src="four-dimension.jpg" caption="**NVMe-TCP和TLS数据密集型操作占比**" numbered="true" height="100%" width="100%" >}}
+
+应用层的正常运行需要依赖传输层，因为传输层能保证数据的顺序和可靠性。如图2中，如果忽视传输层，直接对数据包中的负载进行计算，那么就会导致对pkt1中的计算操作作用在pkt2中，导致严重的错误。所以如果要在网卡上进行L5P计算卸载，就必须首先将传输层完全卸载到网卡上。
+
+{{< figure src="four-dimension.jpg" caption="**L5P和传输层的关系**" numbered="true" height="100%" width="100%" >}}
+
+目前绝大多数应用都是构建在TCP/IP之上，使用操作系统提供的内核协议栈。卸载TCP
