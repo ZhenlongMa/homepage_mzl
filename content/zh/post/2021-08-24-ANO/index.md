@@ -60,10 +60,10 @@ header:
 
 ## **参考文献**
 
-[1] KV-Direct
+[1] Li, B., Ruan, Z., Xiao, W., Lu, Y., Xiong, Y., Putnam, A., Chen, E. and Zhang, L., 2017, October. Kv-direct: High-performance in-memory key-value store with programmable nic. In Proceedings of the 26th Symposium on Operating Systems Principles (pp. 137-152).
 
-[2] LaKe
+[2] Tokusashi, Y., Matsutani, H. and Zilberman, N., 2018, December. LaKe: the power of in-network computing. In 2018 International Conference on ReConFigurable Computing and FPGAs (ReConFig) (pp. 1-8). IEEE.
 
-[3] Catapult
+[3] Putnam, A., Caulfield, A.M., Chung, E.S., Chiou, D., Constantinides, K., Demme, J., Esmaeilzadeh, H., Fowers, J., Gopal, G.P., Gray, J. and Haselman, M., 2014, June. A reconfigurable fabric for accelerating large-scale datacenter services. In 2014 ACM/IEEE 41st International Symposium on Computer Architecture (ISCA) (pp. 13-24). IEEE.
 
-[4] PANIC
+[4] Lin, J., Patel, K., Stephens, B.E., Sivaraman, A. and Akella, A., 2020. {PANIC}: A High-Performance Programmable {NIC} for Multi-tenant Networks. In 14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20) (pp. 243-259).
