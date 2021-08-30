@@ -24,7 +24,7 @@ slug: working-log
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 
 # Optional header image (relative to `static/img/` folder).
