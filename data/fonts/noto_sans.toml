@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Noto Sans"
+
+# Optional Google font URL
+google_fonts = "Noto+Sans+SC:400,700"
+
+# Font families
+heading_font = "Orbitron"
+body_font = "Noto Sans SC"
+nav_font = "Noto Sans SC"
+mono_font = "Noto Sans SC"
