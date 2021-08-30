@@ -110,13 +110,13 @@ TLS是一种给TCP数据包进行加密的协议。一个TLS消息格式如图4�
 
 ## **评测**
 
-{{< figure src="tls_offload.png" caption="**TLS吞吐量和空闲CPU**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="tls_offload.png" caption="**TLS吞吐量和空闲CPU**" numbered="true" height="50%" width="50%" >}}
 
-{{< figure src="pkt_loss_send.png" caption="**发送端丢包影响**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="pkt_loss_send.png" caption="**发送端丢包影响**" numbered="true" height="50%" width="50%" >}}
 
-{{< figure src="pkt_loss_recv.png" caption="**接收端丢包影响**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="pkt_loss_recv.png" caption="**接收端丢包影响**" numbered="true" height="50%" width="50%" >}}
 
-{{< figure src="scalability.png" caption="**自主卸载的可扩展性**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="scalability.png" caption="**自主卸载的可扩展性**" numbered="true" height="50%" width="50%" >}}
 
 评测结果显示1）在CPU性能满的情况下，自主卸载有助于提高吞吐量；在CPU性能未满的情况下，自主卸载有利于降低CPU负担；2）接收端对乱序和丢包的敏感性更高；3）自主卸载面临因网卡资源耗尽而导致的可扩展性问题。
 评测中除了丢包以外，还有一个乱序对接收端的影响，比丢包引起了更多的性能下降，但不清楚这个case是如何生成的，以及乱序的case和丢包有什么区别，因为在接收端看来它们一样都是乱序。
