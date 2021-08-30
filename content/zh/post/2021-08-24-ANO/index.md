@@ -1,6 +1,6 @@
 ---
 title: 智能网卡论文笔记：Autonomous NIC Offloads
-summary: 论文笔记，越过传输层对应用层进行卸载的方法
+summary: 发表在2021年ASPLOS，一种越过传输层对应用层进行卸载的方法
 
 authors:
 
@@ -56,7 +56,7 @@ header:
 
 所以如果要在网卡上进行L5P计算卸载，就必须首先将传输层完全卸载到网卡上。目前绝大多数应用都是构建在TCP/IP之上，使用操作系统提供的内核协议栈，因此需要在网卡上加入TCP卸载引擎（TCP Offload Engine, TOE），而一方面TOE逻辑很复杂，要消耗大量的网卡资源，另一方面Linux的内核开发者们出于安全性、灵活性、可扩展性等方面的考虑拒绝在内核中加入TOE的支持。
 
-目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV-Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
+目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV-Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。Mellanox和以色列理工大学的Boris Pismenny等人发表在2021年ASPLOS上的这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
 
 ## **自主卸载**
 
