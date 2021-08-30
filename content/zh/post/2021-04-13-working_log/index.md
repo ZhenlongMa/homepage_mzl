@@ -20,7 +20,7 @@ profile: true
 share: false
 
 gitment: true
-slug: working-log
+slug: working-log-cn
 
 featured: false
 headless: false

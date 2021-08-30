@@ -19,7 +19,7 @@ profile: true
 share: false
 
 gitment: true
-slug: ANO
+slug: ANO-cn
 
 featured: false
 headless: false
