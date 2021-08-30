@@ -56,7 +56,9 @@ header:
 
 所以如果要在网卡上进行L5P计算卸载，就必须首先将传输层完全卸载到网卡上。目前绝大多数应用都是构建在TCP/IP之上，使用操作系统提供的内核协议栈，因此需要在网卡上加入TCP卸载引擎（TCP Offload Engine, TOE），而一方面TOE逻辑很复杂，要消耗大量的网卡资源，另一方面Linux的内核开发者们出于安全性、灵活性、可扩展性等方面的考虑拒绝在内核中加入TOE的支持。
 
-目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV-Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。Mellanox和以色列理工大学的Boris Pismenny等人发表在2021年ASPLOS上的这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
+目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV-Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。
+
+Mellanox和以色列理工大学的Boris Pismenny等人发表在2021年ASPLOS上的这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
 
 ## **自主卸载**
 
@@ -119,5 +121,6 @@ TLS是一种给TCP数据包进行加密的协议。一个TLS消息格式如图4�
 {{< figure src="scalability.png" caption="**自主卸载的可扩展性**" numbered="true" height="50%" width="50%" >}}
 
 评测结果显示1）在CPU性能满的情况下，自主卸载有助于提高吞吐量；在CPU性能未满的情况下，自主卸载有利于降低CPU负担；2）接收端对乱序和丢包的敏感性更高；3）自主卸载面临因网卡资源耗尽而导致的可扩展性问题。
-评测中除了丢包以外，还有一个乱序对接收端的影响，比丢包引起了更多的性能下降，但不清楚这个case是如何生成的，以及乱序的case和丢包有什么区别，因为在接收端看来它们一样都是乱序。
+
+评测中除了丢包以外，还有一个乱序对接收端的影响，比丢包引起了更多的性能下降，但是目前还不清楚这个case是如何生成的，以及乱序的case和丢包有什么区别，因为在接收端看来它们一样都是乱序。
 
