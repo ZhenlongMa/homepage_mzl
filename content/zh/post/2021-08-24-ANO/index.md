@@ -56,14 +56,29 @@ header:
 
 所以如果要在网卡上进行L5P计算卸载，就必须首先将传输层完全卸载到网卡上。目前绝大多数应用都是构建在TCP/IP之上，使用操作系统提供的内核协议栈，因此需要在网卡上加入TCP卸载引擎（TCP Offload Engine, TOE），而一方面TOE逻辑很复杂，要消耗大量的网卡资源，另一方面Linux的内核开发者们出于安全性、灵活性、可扩展性等方面的考虑拒绝在内核中加入TOE的支持。
 
-目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA[1]、UDP[2]或自定义传输层[3][4]。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
+目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV_Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
+
+## **自主卸载**
+
+论文称这种方法为自主卸载（Autonomous Offload）。能应用这种方法进行卸载的应用，它的计算模式需要[满足一定条件](#约束条件)；并且由于没有TCP保证数据包的顺序，自主卸载需要[正确地处理乱序到达的数据包](#卸载方法)。
+
+### **约束条件**
+
+可以使用自主卸载的应用需要满足四个条件：增量计算、数据量保持、有消息独立的状态以及有未加密的magic pattern。
+
+{{< figure src="accumulative.png" caption="**递增计算**" numbered="true" height="75%" width="75%" >}}
+
+增量计算的含义是消息块在进行计算时只能依靠前一级消息的计算结果，不能依靠后面或者前面好几级的消息。例如图中，data1进行计算时只能使用data0的计算结果，不能使用data2的计算结果；而data2也不能使用data0的计算结果。加这一条的限制是为了避免将整条消息都存储在网卡上，一条消息大小有可能达到GB级，网卡不可能缓存下来。
+
+第二个限制是数据量保持，也就是说N个字节的数据计算完成后仍然是N个字节，否则有可能导致TCP包的数量发生改变，而内核协议栈对此完全无感。
+
+每条消息进行计算时也要有消息独立的状态，也就是说一条消息进行计算的状态要只和当前状态有关，不能与之前和之后的消息相关。
+
+### **TLS**
+
+### **卸载方法**
 
 ## **参考文献**
 
-[1] Li, B., Ruan, Z., Xiao, W., Lu, Y., Xiong, Y., Putnam, A., Chen, E. and Zhang, L., 2017, October. Kv-direct: High-performance in-memory key-value store with programmable nic. In Proceedings of the 26th Symposium on Operating Systems Principles (pp. 137-152).
 
-[2] Tokusashi, Y., Matsutani, H. and Zilberman, N., 2018, December. LaKe: the power of in-network computing. In 2018 International Conference on ReConFigurable Computing and FPGAs (ReConFig) (pp. 1-8). IEEE.
 
-[3] Putnam, A., Caulfield, A.M., Chung, E.S., Chiou, D., Constantinides, K., Demme, J., Esmaeilzadeh, H., Fowers, J., Gopal, G.P., Gray, J. and Haselman, M., 2014, June. A reconfigurable fabric for accelerating large-scale datacenter services. In 2014 ACM/IEEE 41st International Symposium on Computer Architecture (ISCA) (pp. 13-24). IEEE.
-
-[4] Lin, J., Patel, K., Stephens, B.E., Sivaraman, A. and Akella, A., 2020. {PANIC}: A High-Performance Programmable {NIC} for Multi-tenant Networks. In 14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20) (pp. 243-259).
