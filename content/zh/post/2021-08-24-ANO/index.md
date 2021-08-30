@@ -108,6 +108,18 @@ TLS是一种给TCP数据包进行加密的协议。一个TLS消息格式如图4�
 
 {{< figure src="proc_oseq.png" caption="**接收端网卡对消息头乱序的处理**" numbered="true" height="75%" width="75%" >}}
 
+## **评测**
+
+{{< figure src="tls_offload.png" caption="**TLS吞吐量和空闲CPU**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="pkt_loss_send.png" caption="**发送端丢包影响**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="pkt_loss_recv.png" caption="**接收端丢包影响**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="scalability.png" caption="**自主卸载的可扩展性**" numbered="true" height="75%" width="75%" >}}
+
+评测结果显示1）在CPU性能满的情况下，自主卸载有助于提高吞吐量；在CPU性能未满的情况下，自主卸载有利于降低CPU负担；2）接收端对乱序和丢包的敏感性更高；3）自主卸载面临因网卡资源耗尽而导致的可扩展性问题。
+
 ## **参考文献**
 
 
