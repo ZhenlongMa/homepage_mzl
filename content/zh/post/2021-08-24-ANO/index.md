@@ -56,7 +56,7 @@ header:
 
 所以如果要在网卡上进行L5P计算卸载，就必须首先将传输层完全卸载到网卡上。目前绝大多数应用都是构建在TCP/IP之上，使用操作系统提供的内核协议栈，因此需要在网卡上加入TCP卸载引擎（TCP Offload Engine, TOE），而一方面TOE逻辑很复杂，要消耗大量的网卡资源，另一方面Linux的内核开发者们出于安全性、灵活性、可扩展性等方面的考虑拒绝在内核中加入TOE的支持。
 
-目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV_Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
+目前的应用层卸载工作采用了不同的方法避开TCP协议，例如采用RDMA（[KV-Direct](https://ring0.me/files/KV-Direct/kv-direct-paper.pdf)）、UDP（[LaKe](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8641696)）或自定义传输层（[Catapult](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7106407)、[PANIC](https://www.usenix.org/system/files/osdi20-lin.pdf)）。但是有的应用层协议是和TCP紧密配合的，例如TLS，脱离TCP协议就完全无法工作。这篇论文提出了可以旁路传输层的应用层计算模式和对这种应用进行卸载的方法。
 
 ## **自主卸载**
 
@@ -66,15 +66,19 @@ header:
 
 可以使用自主卸载的应用需要满足四个条件：增量计算、数据量保持、有消息独立的状态以及有未加密的magic pattern。
 
-{{< figure src="accumulative.png" caption="**递增计算**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="accumulative.png" caption="**递增计算**" numbered="true" height="50%" width="50%" >}}
 
 增量计算的含义是消息块在进行计算时只能依靠前一级消息的计算结果，不能依靠后面或者前面好几级的消息。例如图中，data1进行计算时只能使用data0的计算结果，不能使用data2的计算结果；而data2也不能使用data0的计算结果。加这一条的限制是为了避免将整条消息都存储在网卡上，一条消息大小有可能达到GB级，网卡不可能缓存下来。
 
 第二个限制是数据量保持，也就是说N个字节的数据计算完成后仍然是N个字节，否则有可能导致TCP包的数量发生改变，而内核协议栈对此完全无感。
 
-每条消息进行计算时也要有消息独立的状态，也就是说一条消息进行计算的状态要只和当前状态有关，不能与之前和之后的消息相关。
+每条消息进行计算时也要有消息独立的状态，也就是说一条消息进行计算的状态要只和当前状态有关，不能与之前和之后的消息相关。原文中这里提到的是要有恒定大小的状态，但我没有理解为什么要大小恒定。
+
+此外，由于应用层有可能是加密运算，第四个约束就是要保证每个消息中有一部分未加密的部分，称为magic pattern，这一部分一般位于包头。这两个约束是为了在遇到乱序包的时候进行状态恢复。
 
 ### **TLS**
+
+文中找到了几个符合上述条件的应用，文章重点放在其中的TLS上。
 
 ### **卸载方法**
 
