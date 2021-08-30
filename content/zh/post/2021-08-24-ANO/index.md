@@ -48,7 +48,7 @@ header:
 
 在计算机网络五层模型中，第五层协议（Layer 5 Protocol, L5P）包含了众多数据密集型计算，例如加解密、串/并行化、哈希计算和压缩/解压缩等，它们占用了大量的CPU计算时间。并且第五层协议内部也有依赖关系，比如HTTPS协议基于同是L5P的TLS协议，所以数据密集型计算影响绝大多数L5P的性能。如果能将L5P协议进行网卡卸载，一方面可以节省大量CPU资源，另一方面可以提升基于它们的应用整体的性能。
 
-{{< figure src="cpu-clk.png" caption="**NVMe-TCP和TLS数据密集型操作占比**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="cpu-clk.png" caption="**NVMe-TCP和TLS数据密集型操作占比**" numbered="true" height="50%" width="50%" >}}
 
 应用层的正常运行需要依赖传输层，因为传输层能保证数据的顺序和可靠性。如图2中，如果忽视传输层，直接对数据包中的负载进行计算，那么就会导致对pkt1中的计算操作作用在pkt2中，导致严重的错误。
 
@@ -80,7 +80,17 @@ header:
 
 文中找到了几个符合上述条件的应用，文章重点放在其中的TLS上。
 
+{{< figure src="tls_format.jpg" caption="**TLS数据格式**" numbered="true" height="50%" width="50%" >}}
+
+TLS是一种给TCP数据包进行加密的协议。一个TLS消息格式如图4所示，初始向量是一个随机值，前面五个字段进行一系列认证计算后生成包尾ICV，接收方用作认证。
+
+{{< figure src="tls_calc.png" caption="**TLS计算过程**" numbered="true" height="75%" width="75%" >}}
+
+文章中采用的加密方法是AES-GCM方法。首先使用AES算法对初始向量进行运算生成16B kerstream，每一个keystream对16B的明文进行异或操作，生成16B的密文。第二个16B明文使用的初始向量是第一个16B的初始向量加一，以此类推。最后将全零用AES加密后的结果和包头以及所有密文做累乘得到ICV字段。可以看到这一计算过程是符合增量计算和数据量保持的。
+
 ### **卸载方法**
+
+
 
 ## **参考文献**
 
