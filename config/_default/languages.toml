@@ -13,7 +13,7 @@
     contentDir = "content/zh"
     title = "马振龙的个人主页"
 #  [zh.params]
-    description = "中文网站"
+    ##description = "中文网站"
     [[zh.menu.main]]
         name = "首页"
         url = "#about"
