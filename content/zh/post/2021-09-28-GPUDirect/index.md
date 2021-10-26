@@ -36,11 +36,18 @@ header:
   image: ""
 ---
 
+GPUDirect实现的困难有两个：主机和其他外设不能直接访问GPU内存，以及目前GPU的编程模型中没有直接通信相关的原语。
 GPUDirect RDMA的实现分为两种：一种使用GPU虚拟地址，另一种基于MMIO。
 
-### **GPU VA**
+在没有GPUDirect的情况下，GPU-A要向GPU-B通信需要将数据写入主机内存中属于自己的bufferA中，主机将数据拷贝到属于GPU-B的bufferB中，再发给GPU-B。CUDA4开始引入GPUDirect，
+
+cudaMalloc是在UVA空间中创建内存。
+
+### **GPU地址管理**
 
 ### **MMIO**
 
 ## **参考资料**
-[1] Direct Communication Methods for Distributed GPUs
+[1] [Direct Communication Methods for Distributed GPUs](https://archiv.ub.uni-heidelberg.de/volltextserver/18623/1/Dissertation_LenaOden.pdf)
+
+[2] [nvidia gpu中的Unified Memory](https://binbinmeng.wordpress.com/2018/10/19/nvidia-gpu%E4%B8%AD%E7%9A%84unified-memory/)

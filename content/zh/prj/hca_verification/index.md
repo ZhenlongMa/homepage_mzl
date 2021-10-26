@@ -17,6 +17,8 @@ comments: true
 profile: true
 share: false
 
+gitment: true
+slug: HCA-verification-cn
 
 # Optional header image (relative to `static/img/` folder).
 header:
