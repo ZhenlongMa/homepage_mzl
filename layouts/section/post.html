@@ -4,6 +4,13 @@
 
 <div class="universal-wrapper">
     <div class="row">
+        <div class="col-lg-12">
+            <!-- <h3>{{ .Key }}</h3> -->
+            12121
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-lg-14">
             <!-- added by zhenlong at 2021-11-06 -->
             {{ with .Params.categories }}
@@ -33,10 +40,6 @@
                                 {{ partial "li_compact" . }}
                             {{ end }}
                         {{ end }}
-                    </div>
-                    <div class="col-lg-12">
-                        <!-- <h3>{{ .Key }}</h3> -->
-                        12121
                     </div>
                 </div>
             {{ end }}
