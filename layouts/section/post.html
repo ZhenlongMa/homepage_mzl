@@ -37,8 +37,8 @@
                     </div>
                     <div class="col-lg-2">
                         分类：<br>
-                        {{ range .Pages }}
-                            <li><a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a></li>
+                        {{ range $key, $value := .Site.Taxonomies.categories }}
+                            <li><a href="{{ $baseurl  }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
                         {{ end }}
                     </div>
                 </div>
