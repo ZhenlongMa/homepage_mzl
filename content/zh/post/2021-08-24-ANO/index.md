@@ -28,6 +28,8 @@ private: false
 
 tags:
 - 智能网卡
+
+categories:
 - 论文笔记
 
 # Optional header image (relative to `static/img/` folder).
