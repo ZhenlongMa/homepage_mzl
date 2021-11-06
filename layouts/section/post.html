@@ -38,7 +38,7 @@
                     <div class="col-lg-2">
                         分类：<br>
                         {{ range .Pages }}
-                            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a> <br>
+                            <li><a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a></li> <br>
                         {{ end }}
                     </div>
                 </div>
