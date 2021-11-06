@@ -36,6 +36,10 @@
                     </div>
                 </div>
             {{ end }}
+
+            {{ range .Data.Pages }}
+                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            {{ end }}
         </div>
     </div>
 
