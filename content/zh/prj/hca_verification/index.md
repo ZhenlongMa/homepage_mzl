@@ -26,7 +26,7 @@ header:
   image: ""
 
 categories:
-- 验证
+
 tags:
 - 验证
 ---
