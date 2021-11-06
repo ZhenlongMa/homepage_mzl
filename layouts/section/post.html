@@ -36,9 +36,9 @@
                         {{ end }}
                     </div>
                     <div class = "col-lg-2">
-                        {{ range .Data.Pages }}
+                        {{ range .Pages }}
                             <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-                            <!-- <a href="{{.Permalink}}">{{.Title}}</a> -->
+
                         {{ end }}
                         <!-- {{ range .Data.Terms.Alphabetical }}
                             <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
