@@ -35,9 +35,9 @@
                             {{ end }}
                         {{ end }}
                     </div>
-                    <div class = "col-lg-2">
+                    <div class="col-lg-2">
                         {{ range .Pages }}
-                            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a> <br>
                         {{ end }}
                     </div>
                 </div>
