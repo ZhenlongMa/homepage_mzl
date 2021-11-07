@@ -38,7 +38,7 @@
                     <div class="col-lg-2">
                         分类：<br>
                         {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-                            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                            <li><a href="{{.Permalink}}">{{.Title}}</a> {{.Count}}</li>
                         {{end}}
                     </div>
                 </div>
@@ -62,6 +62,9 @@
   {{ end }}
 
   {{ partial "pagination" . }} -->
+    <!-- {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }} -->
 
 </div>
 
