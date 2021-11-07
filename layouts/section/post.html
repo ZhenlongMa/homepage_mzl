@@ -36,7 +36,7 @@
                         {{ end }}
                     </div>
                     <div class="col-lg-2">
-                        分类：<br>
+                        Category:<br>
                         {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
                             <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                         {{end}}
