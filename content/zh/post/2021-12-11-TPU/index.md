@@ -42,7 +42,7 @@ header:
 
 TPU的核心部件是一个乘法阵列，其中有256x256个ALU，每个ALU是一个8位乘加器，组成systolic架构进行矩阵乘运算。TPU不是冯诺依曼架构，其中没有取指环节，而是主机将指令送给TPU上的指令buffer中，其更像是一个浮点处理器而不是GPU。指令类似CISC，每条指令的执行时间（CPI）为10-20个时钟周期。TPU内部通过256位宽线路互连。
 
-{{< figure src="tpu-arch.png" caption="**TPU架构图**" numbered="true" height="50%" width="50%" >}}
+{{< figure src="tpu-arch.png" caption="**TPU架构图**" numbered="true" height="100%" width="100%" >}}
 
 ## **参考文献**
 
