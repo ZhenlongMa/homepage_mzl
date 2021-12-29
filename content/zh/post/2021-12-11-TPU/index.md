@@ -55,7 +55,7 @@ TPUv1没有面向用户开放，仅仅被谷歌公司自己用作搜索加速。
 - 需要更宽的操作数以提高精度；  
 - 相比于推理过程可以让各个部分独立执行，训练过程需要多个芯片之间进行频繁的参数交互，通信要求更高。  
 
-TPUv2的改进包括：将乘法器作为向量单元的一个协处理器；将两个buffer合并为一个；增加互连功能；多核芯片。新架构可以看作以向量单元为中心的架构。  
+TPUv2的改进包括：将乘法器作为向量单元的一个协处理器；将两个buffer合并为一个；增加互连功能；多核芯片；增大数据位宽。新架构可以看作以向量单元为中心的架构。  
 {{< figure src="v2.jpg" caption="**TPUv2架构图**" numbered="true" height="100%" width="100%" >}}  
 一个TPU板包含四个TPU芯片，每个TPU芯片包含两个核。  
 TPUv2的一个VLIW语句为322位，包含两个标量操作、四个向量操作、两个矩阵操作、一个杂项操作和六个立即数。  
@@ -67,8 +67,8 @@ TPUv3在2018年第四季度部署，在架构上并没有做过多调整，只�
 
 
 ## **参考文献**
-[1] 计算机体系结构量化研究方法，第七章  
-[2] [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246)  
-[3] [The Design Process for Google's Training Chips: TPUv2 and TPUv3](https://ieeexplore.ieee.org/document/9351692?arnumber=9351692)  
-[4] [Ten Lessons From Three Generations Shaped Google’s TPUv4i : Industrial Product](https://ieeexplore.ieee.org/document/9499913)  
-[5] [A domain-specific supercomputer for training deep neural networks](https://dl.acm.org/doi/pdf/10.1145/3360307)
+1. 计算机体系结构量化研究方法，第七章  
+2. [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246) 
+3. [The Design Process for Google's Training Chips: TPUv2 and TPUv3](https://ieeexplore.ieee.org/document/9351692?arnumber=9351692)  
+4. [Ten Lessons From Three Generations Shaped Google’s TPUv4i : Industrial Product](https://ieeexplore.ieee.org/document/9499913)  
+5. [A domain-specific supercomputer for training deep neural networks](https://dl.acm.org/doi/pdf/10.1145/3360307)
