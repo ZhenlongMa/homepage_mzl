@@ -76,7 +76,7 @@ TPUv3在2018年第四季度部署，在架构上并没有做过多调整，只�
 
 ## **参考文献**
 1. 计算机体系结构量化研究方法，第七章  
-2. [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246) 
-3. [The Design Process for Google's Training Chips: TPUv2 and TPUv3](https://ieeexplore.ieee.org/document/9351692?arnumber=9351692)  
-4. [Ten Lessons From Three Generations Shaped Google’s TPUv4i : Industrial Product](https://ieeexplore.ieee.org/document/9499913)  
-5. [A domain-specific supercomputer for training deep neural networks](https://dl.acm.org/doi/pdf/10.1145/3360307)  
+2. [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246)
+3. [The Design Process for Google's Training Chips: TPUv2 and TPUv3](https://ieeexplore.ieee.org/document/9351692?arnumber=9351692)
+4. [Ten Lessons From Three Generations Shaped Google’s TPUv4i : Industrial Product](https://ieeexplore.ieee.org/document/9499913)
+5. [A domain-specific supercomputer for training deep neural networks](https://dl.acm.org/doi/pdf/10.1145/3360307)
