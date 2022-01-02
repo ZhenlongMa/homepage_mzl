@@ -59,7 +59,7 @@ TPUv1没有面向用户开放，仅仅被谷歌公司自己用作搜索加速。
 
 ### **架构**
 
-{{< figure src="v2.jpg" caption="**TPUv2架构图**" numbered="true" height="100%" width="100%" >}}
+{{< figure src="v2.jpg" caption="**TPUv2架构图**" numbered="true" height="75%" width="75%" >}}
 
 由于计算模式的改变，TPUv1的数据buffer->矩阵乘模块->数据buffer->激活函数框架不适用于训练过程。首先，两个数据buffer合并为一个通用存储器以提高灵活性；加入可编程向量单元（Vector Unit），新架构可以看作以向量单元为中心，矩阵乘单元作为向量单元的协处理器；为了支持可扩展性，存储单元与一套自定义的片间互连模块（Interchip Interconnect, ICI）相连。
 
