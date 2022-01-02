@@ -69,7 +69,7 @@ TPUv1没有面向用户开放，仅仅被谷歌公司自己用作搜索加速。
 
 {{< figure src="scu.jpg" caption="**标量计算单元架构图**" numbered="true" height="50%" width="50%" >}}
 
-SCU的架构如上图所示，
+SCU的架构如上图所示.
 
 ### **互连**
 
