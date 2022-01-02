@@ -67,7 +67,7 @@ TPUv1没有面向用户开放，仅仅被谷歌公司自己用作搜索加速。
 
 标量计算单元（Scalar Computation Unit, SCU）从指令存储器中取指并执行。TPUv2的一个VLIW语句为322位，包含两个标量操作、四个向量操作、两个矩阵操作、一个杂项操作和六个立即数。
 
-{{< figure src="scu.jpg" caption="**标量计算单元架构图**" numbered="true" height="50%" width="100%" >}}
+{{< figure src="scu.jpg" caption="**标量计算单元架构图**" numbered="true" height="50%" width="50%" >}}
 
 SCU的架构如上图所示，
 
