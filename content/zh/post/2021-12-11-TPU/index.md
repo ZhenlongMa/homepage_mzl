@@ -61,25 +61,23 @@ TPUv1没有面向用户开放，仅仅被谷歌公司自己用作搜索加速。
 
 {{< figure src="v2.jpg" caption="**TPUv2架构图**" numbered="true" height="75%" width="75%" >}}
 
-由于计算模式的改变，TPUv1的数据buffer->矩阵乘模块->数据buffer->激活函数框架不适用于训练过程。因此，两个数据buffer合并为一个通用存储器以提高灵活性；加入可编程向量单元（Vector Unit），新架构可以看作以向量单元为中心，矩阵乘单元作为向量单元的协处理器；为了支持可扩展性，存储单元与一套自定义的片间互连模块（Interchip Interconnect, ICI）相连。
+由于计算模式的改变，TPUv1的数据buffer->矩阵乘模块->数据buffer->激活函数框架不适用于训练过程。因此，两个数据buffer合并为一个通用存储器以提高灵活性；加入可编程向量单元（Vector Unit），新架构可以看作以向量单元为中心，矩阵乘单元作为向量单元的协处理器；为了支持可扩展性，存储单元与一套自定义的片间互连模块（Interchip Interconnect, ICI）相连。此外，第二代TPU采用了bf16数据类型，以牺牲精度的代价达到与fp32同样的取值范围。
 
 ### **计算单元**
 
-TPUv2的一个VLIW语句为322位，包含两个标量操作、四个向量操作（包含两个load/store操作）、两个矩阵操作（push和pop）、一个杂项操作和六个立即数。
+TPUv2加入了取值功能，所用的一个VLIW语句为322位，包含两个标量操作、四个向量操作（包含两个load/store操作）、两个矩阵操作（push和pop）、一个杂项操作和六个立即数。
 
-标量计算单元（Scalar Computation Unit, SCU）负责从指令存储器中取指、译码，以及执行标量操作，然后将译码后的指令传递给VCU。
+标量计算单元（Scalar Computation Unit, SCU）负责从指令存储器中取指以及执行标量操作，然后将指令传递给VCU。
 
-{{< figure src="scu.jpg" caption="**标量计算单元架构图**" numbered="true" height="50%" width="50%" >}}
+{{< figure src="scu.jpg" caption="**标量计算单元架构图**" numbered="true" height="75%" width="75%" >}}
 
 SCU完成译码之后，会将指令传递给向量计算单元（Vector Computation Unit, VCU）。一个VCU有128个lane，一个lane有8个sublane。每个sublane包含一个32位双发射ALU，因此每个VCU在每个时钟周期内总共可以处理八组128位宽的向量。
 
-VCU执行VLIW中的向量操作，以及通过矩阵操作中push和pop的方式与矩阵计算单元进行交互。
+VCU执行VLIW中的向量操作，以及通过矩阵操作中push和pop的方式与128x128矩阵计算单元进行交互。
 
-{{< figure src="vcu.jpg" caption="**向量计算单元架构图**" numbered="true" height="50%" width="50%" >}}
+{{< figure src="vcu.jpg" caption="**向量计算单元架构图**" numbered="true" height="75%" width="75%" >}}
 
 ### **存储器系统**
-
-
 
 ### **互连**
 
