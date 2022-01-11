@@ -18,7 +18,7 @@ subtitle = ""
   icon = "code"
   icon_pack = "fas"
   name = "UVM"
-  description = "40%"
+  description = "60%"
 [[feature]]
   icon = "code"
   icon_pack = "fas"
@@ -29,19 +29,19 @@ subtitle = ""
   icon = "laptop-code"
   icon_pack = "fas"
   name = "操作系统"
-  description = "20%"
+  description = "40%"
 
 [[feature]]
   icon = "sitemap"
   icon_pack = "fas"
   name = "计算机网络"
-  description = "30%"
+  description = "50%"
 
 [[feature]]
   icon = "server"
   icon_pack = "fas"
   name = "计算机体系结构"
-  description = "30%"
+  description = "50%"
 
 # Uncomment to use emoji icons.
 # [[feature]]
