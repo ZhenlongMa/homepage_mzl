@@ -39,7 +39,7 @@ subtitle = ""
   description = "50%"
 
 [[feature]]
-  icon = "server"
+  icon = "memory"
   icon_pack = "fas"
   name = "Computer Architecture"
   description = "50%"

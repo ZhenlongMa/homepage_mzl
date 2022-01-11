@@ -38,7 +38,7 @@ subtitle = ""
   description = "50%"
 
 [[feature]]
-  icon = "server"
+  icon = "memory"
   icon_pack = "fas"
   name = "计算机体系结构"
   description = "50%"
