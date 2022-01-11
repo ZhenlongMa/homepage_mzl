@@ -19,6 +19,11 @@ subtitle = ""
   icon_pack = "fas"
   name = "UVM"
   description = "40%"
+[[feature]]
+  icon = "code"
+  icon_pack = "fas"
+  name = "Chisel"
+  description = "20%"
 
 [[feature]]
   icon = "laptop-code"
