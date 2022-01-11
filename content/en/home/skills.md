@@ -18,25 +18,31 @@ subtitle = ""
   icon = "code"
   icon_pack = "fas"
   name = "UVM"
-  description = "40%"
+  description = "60%"
+
+[[feature]]
+  icon = "code"
+  icon_pack = "fas"
+  name = "Chisel"
+  description = "20%"
 
 [[feature]]
   icon = "laptop-code"
   icon_pack = "fas"
   name = "Operating System"
-  description = "20%"
+  description = "40%"
 
 [[feature]]
   icon = "sitemap"
   icon_pack = "fas"
   name = "Computer Network"
-  description = "30%"
+  description = "50%"
 
 [[feature]]
   icon = "server"
   icon_pack = "fas"
   name = "Computer Architecture"
-  description = "30%"
+  description = "50%"
 
 # Uncomment to use emoji icons.
 # [[feature]]
