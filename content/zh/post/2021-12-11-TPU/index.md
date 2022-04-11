@@ -36,6 +36,12 @@ categories:
 header:
   caption: ""
   image: ""
+
+type: wowchemycms
+private: true
+outputs:
+  - wowchemycms_config
+  - HTML
 ---
 
 张量处理器（Tensor Processing Unit，TPU）是谷歌针对深度学习推出的一款加速器。早在2006年谷歌的工程师们就讨论过在数据中心内部署类似的器件，但当时适用于其上的应用很少，部署的成本相对较高，因此搁置了几年。但2013年由于AlexNet的推广，谷歌预测接下来几年语音搜索会广泛应用，如果用户每天语音搜索的时间达到三分钟，谷歌数据中心的规模需要翻倍才能满足这种需求。因此谷歌立刻启动了一个使用ASIC进行加速的项目，并期望性能可以达到GPU的十倍以上。15个月后，TPU诞生。
