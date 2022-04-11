@@ -24,7 +24,7 @@ slug: TPU-cn
 featured: false
 headless: false
 draft: false
-private: false
+## private: false
 
 tags:
 - 加速器互连
