@@ -1,5 +1,5 @@
 ---
-title: FlexDriver总结
+title: FlexDriver总结（草稿）
 summary: 本文为论文总结
 
 authors:
@@ -23,7 +23,7 @@ slug: flexdriver-cn
 
 featured: false
 headless: false
-draft: true
+draft: false
 private: false
 
 tags:
@@ -41,13 +41,15 @@ header:
 
 加速器互连和在网计算共同面对的问题是加速单元和网络设备之间如何高效交互。为了降低CPU的开销以及提高性能，文章计划用加速器控制网卡，即加速器实现网卡驱动，因此给项目起名叫FlexDriver，简称FLD。NVidia在本文中针对此问题提出将网卡的控制逻辑植入加速器中，并在逻辑切分、数据结构压缩和软件抽象三个方面做了优化工作。
 
-{{< figure src="hw.jpg" caption="**FLD架构图**" numbered="true" height="75%" width="75%" >}}
+{{< figure src="hw.jpg" caption="**FLD硬件架构图**" numbered="true" height="75%" width="75%" >}}
+
+{{< figure src="sw.jpg" caption="**FLD软件架构图**" numbered="true" height="75%" width="75%" >}}
 
 ## **逻辑切分**
 
 网卡驱动以及网络协议栈非常复杂，如果在加速器侧完全实现会占用大量片上面积，所以FLD对驱动逻辑进行了切分，对性能影响严重的数据平面放在加速器上，而逻辑复杂且不严重影响性能的部分仍然放在主机侧，前者包括队列管理、数据buffer分配，而后者包括队列初始化、连接管理。
 
-## **数据压缩**
+## **内存设计**
 
-在数据存储方面，
+FLD为了避免与其他外设以及加速器应用竞争内存带宽的问题，将通信控制相关的数据存储在FLD专用的片上内存中，同时为了尽可能减少此部分内存面积，在数据存储方面，
  
