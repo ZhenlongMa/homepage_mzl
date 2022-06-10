@@ -15,7 +15,7 @@ header:
 ---
 
 > 图难于其易，为大于其细。
-temp edit
+
 ---
 
 <!-- ## _Table of Contents_ -->
