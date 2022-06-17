@@ -1,6 +1,6 @@
 ---
 title: 谷歌TPU调研
-summary: 本文为对谷歌TPU加速器的调研报告，本文待完成
+summary: 本文为对谷歌TPU加速器的调研报告
 
 authors:
 
