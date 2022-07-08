@@ -1,11 +1,11 @@
 ---
 title: HCA验证平台
-summary: 本工作对课题组开发的网卡作RTL级验证，使用UVM产生对网卡的输入激励并比对输出结果。
+summary: 本工作对课题组开发的RDMA网卡作RTL级功能验证，使用UVM框架产生对网卡的输入激励并比对输出结果。
 date: ""
 publishDate: "2021-06-03T14:33:00+08:00"
 lastmod: ""
-#authors:
-#- admin
+# authors:
+# - admin
 
 # View.
 #   1 = List
@@ -16,6 +16,11 @@ view: 2
 comments: true
 profile: true
 share: false
+
+featured: false
+headless: false
+draft: false
+private: false
 
 gitment: true
 slug: HCA-verification-cn
@@ -30,11 +35,30 @@ categories:
 tags:
 - 验证
 ---
+[本项目源代码在此](https://github.com/ZhenlongMa/RDMA-NIC-Verification)
 
-## **1. 函谷HCA介绍**
-HCA是IB网络与主机之间的软硬件交互接口。我们的函谷HCA支持最多16K个QP和100Gbps的带宽。HCA卸载了地址转换和翻译功能，通过此功能网络数据可以旁路操作系统直接将数据写入内存。
+## **函谷HCA介绍**
+HCA是IB网络与主机之间的软硬件交互接口。我们的Hangu RDMA网卡支持最多8192个QP和100Gbps带宽。RDMA卸载了地址转换和翻译功能，通过此功能网络数据可以旁路操作系统直接将数据写入内存。
 
-## **2. 函谷HCA验证**
+### **软硬件接口** 
+
+## **验证平台**
 验证平台基于UVM搭建，整体结构图如下：
 
-{{< figure src="framework.jpg" caption="Verification Framework" numbered="true" height="75%" width="75%" >}}
+{{< figure src="framework.png" caption="Verification Framework" numbered="true" height="75%" width="75%" >}}
+
+验证平台模拟了两台主机互相发送数据，两台主机抽象为两个sub_env。
+
+### **主机侧接口**
+DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/products/intellectual-property/7_series_gen_3_pci_express.html#tabAnchor-overview)，其接口可参考其文档。
+
+### **激励生成**
+激励生成逻辑
+
+### **地址分配**
+RDMA网卡工作涉及到三种内存区域：上下文空间、队列空间以及数据空间。上下文空间存储内存地址转换信息、队列状态信息等等对通信进行管理所需要的数据，在实际网卡使用中此部分只能由在内核态访问；队列空间存储工作队列以及完成队列的描述符；数据空间中为待发送的数据或接收缓冲区。
+
+在网卡实际使用中由操作系统分配上述空间，验证平台
+
+### **正确性判定**
+由于硬件支持的连接数量最多达到8192个，并且网卡片上还有上下文信息的cache。如果采用golden model的话很难保证与DUT的请求顺序一致。因此本验证平台将整个通信过程看作黑盒，仅比对源地址和目的地址的数据是否一致。
