@@ -1,6 +1,6 @@
 ---
-title: HCA验证平台
-summary: 本工作对课题组开发的RDMA网卡作RTL级功能验证，使用UVM框架产生对网卡的输入激励并比对输出结果。
+title: RDMA网卡系统级功能验证框架
+summary: 本工作对课题组开发的RDMA网卡作RTL功能验证，使用UVM框架产生对网卡的输入激励并比对输出结果。
 date: ""
 publishDate: "2021-06-03T14:33:00+08:00"
 lastmod: ""
