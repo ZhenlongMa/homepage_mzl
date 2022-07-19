@@ -50,6 +50,8 @@ RNIC向主机暴露BAR空间用作配置寄存器和门铃寄存器。
 
 验证平台模拟了两台主机互相发送数据，两台主机抽象为两个sub_env。
 
+### **Component**
+
 ### **主机侧接口**
 DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/products/intellectual-property/7_series_gen_3_pci_express.html#tabAnchor-overview)，其接口可参考其文档。
 
@@ -57,6 +59,8 @@ DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/produ
 验证平台根据运行时参数确定本次验证的连接数、数据量等信息。
 
 ### **命令行格式**
+命令行中需要指定的参数及取值范围如下表：
+
 |参数|含义|取值范围|
 |:---:|:---:|:---:|
 |+HOST_NAME|通信的主机个数|取决于DUT实际情况|
@@ -71,8 +75,11 @@ DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/produ
 |+RECV_WQE_NUM|每个门铃中包含的RECV工作请求个数|0-30，工作请求总数不能超过30，SEND数量与RECV相同|
 |+SG_NUM|每个工作请求中包含的SG Entry数量|1-6|
 |+DATA_CNT|每个SG Entry中包含的数据量|不限|
-|+DATA_UNIT|数据单位|B/KB/MB|
+|+DATA_UNIT|上述数据量的单位|B/KB/MB|
 
+一个测试的输入样例如下：
+
+`./hca_test -uvmDebug +UVM_VERBOSITY=UVM_LOW +vpdfile+./case/multiqp_wave/wave4109.vpd +UVM_TESTNAME=test_direct_param +HOST_NUM=2 +PROC_NUM=2 +RC_QP_NUM=16 +UC_QP_NUM=0 +UD_QP_NUM=0 +DB_NUM=1 +WRITE_WQE_NUM=0 +READ_WQE_NUM=0 +SEND_WQE_NUM=1 +RECV_WQE_NUM=1 +SG_NUM=1 +DATA_CNT=10 +DATA_UNIT=B -l ./case/multiqp_log/case4109.log`
 
 
 ## **地址分配方法**

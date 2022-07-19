@@ -23,7 +23,7 @@ slug: RedN-cn
 
 featured: false
 headless: false
-draft: false
+draft: true
 private: false
 
 tags:
@@ -50,3 +50,6 @@ header:
 
 ## **Cross-Channel Communication**
 [Mellanox的编程框架](https://docs.nvidia.com/networking/pages/viewpage.action?pageId=34256548&exitMobile=true)中提供了被称为Cross-Channel Communication的机制（下文简称3C），这种机制提供了多个QP之间的同步服务。用户可以向支持3C的QP下发wait和enable两种描述符。
+
+### **WAIT描述符**
+在正常的RDMA网卡工作过程中，
