@@ -30,7 +30,7 @@ tags:
 - 心理
 
 categories:
-- 读书笔记
+- 随笔
 
 # Optional header image (relative to `static/img/` folder).
 header:
