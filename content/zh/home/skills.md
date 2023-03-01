@@ -38,8 +38,8 @@ subtitle = ""
   description = "50%"
 
 [[feature]]
-  icon = "diagram-project"
-  icon_pack = "fas"
+  icon = "fa-diagram-project"
+  icon_pack = "fa-solid"
   name = "RDMA"
   description = "80%"
 
