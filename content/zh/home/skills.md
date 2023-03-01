@@ -12,7 +12,7 @@ subtitle = ""
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 
-# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
+# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 
 [[feature]]
   icon = "code"
@@ -34,8 +34,14 @@ subtitle = ""
 [[feature]]
   icon = "sitemap"
   icon_pack = "fas"
-  name = "计算机网络"
+  name = "RDMA"
   description = "50%"
+
+[[feature]]
+  icon = "diagram-project"
+  icon_pack = "fas"
+  name = "RDMA"
+  description = "80%"
 
 [[feature]]
   icon = "memory"
