@@ -41,7 +41,7 @@ subtitle = ""
   icon = "robot"
   icon_pack = "fas"
   name = "Gem-5"
-  description = "80%"
+  description = "30%"
 
 [[feature]]
   icon = "memory"
