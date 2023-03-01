@@ -35,12 +35,12 @@ subtitle = ""
   icon = "sitemap"
   icon_pack = "fas"
   name = "RDMA"
-  description = "50%"
+  description = "80%"
 
 [[feature]]
-  icon = "fa-diagram-project"
-  icon_pack = "fa-solid"
-  name = "RDMA"
+  icon = "diagram-project"
+  icon_pack = "fas"
+  name = "Gem-5"
   description = "80%"
 
 [[feature]]
