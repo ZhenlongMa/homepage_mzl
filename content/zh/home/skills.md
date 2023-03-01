@@ -38,7 +38,7 @@ subtitle = ""
   description = "80%"
 
 [[feature]]
-  icon = "diagram-project"
+  icon = "robot"
   icon_pack = "fas"
   name = "Gem-5"
   description = "80%"
