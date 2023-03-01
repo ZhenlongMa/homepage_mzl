@@ -32,7 +32,12 @@ education:
     institution: 浙江大学
     institution_url:
     logo: zju_logo.png
-    year: 2019
+    year: 2015 - 2019
+  - course: 计算机系统结构 博士在读
+    institution: 中国科学院大学
+    institution_url:
+    logo:
+    year: 2019 - 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -79,4 +84,4 @@ user_groups:
 #   - HTML
 ---
 
-马振龙是一位计算机系统结构方向的在读博士生，现就读于中国科学院计算技术研究所。研究兴趣包括计算机网络和计算机体系结构。目前尚无研究成果。
+马振龙是计算机系统结构方向的在读博士生，现就读于中国科学院计算技术研究所。研究兴趣包括计算机网络和计算机体系结构。目前尚无研究成果。
