@@ -38,7 +38,7 @@ subtitle = ""
   description = "80%"
 
 [[feature]]
-  icon = "window-maximize"
+  icon = "diagram-project"
   icon_pack = "fas"
   name = "Gem-5"
   description = "30%"
