@@ -58,7 +58,7 @@ DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/produ
 ## **激励生成机制**
 验证平台根据运行时参数确定本次验证的连接数、数据量等信息。
 
-### **命令行格式**
+### **命令行用户接口**
 命令行中需要指定的参数及取值范围如下表：
 
 |参数|含义|取值范围|
@@ -79,7 +79,16 @@ DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/produ
 
 一个测试的输入样例如下：
 
-`./hca_test -uvmDebug +UVM_VERBOSITY=UVM_LOW +vpdfile+./case/multiqp_wave/wave4109.vpd +UVM_TESTNAME=test_direct_param +HOST_NUM=2 +PROC_NUM=2 +RC_QP_NUM=16 +UC_QP_NUM=0 +UD_QP_NUM=0 +DB_NUM=1 +WRITE_WQE_NUM=0 +READ_WQE_NUM=0 +SEND_WQE_NUM=1 +RECV_WQE_NUM=1 +SG_NUM=1 +DATA_CNT=10 +DATA_UNIT=B -l ./case/multiqp_log/case4109.log`
+```
+./hca_test -uvmDebug +UVM_VERBOSITY=UVM_LOW \
++vpdfile+./case/multiqp_wave/wave4109.vpd \
++UVM_TESTNAME=test_direct_param +HOST_NUM=2 +PROC_NUM=2 \
++RC_QP_NUM=16 +UC_QP_NUM=0 +UD_QP_NUM=0 \
++DB_NUM=1 \
++WRITE_WQE_NUM=0 +READ_WQE_NUM=0 +SEND_WQE_NUM=1 +RECV_WQE_NUM=1 \
++SG_NUM=1 +DATA_CNT=10 +DATA_UNIT=B \
+-l ./case/multiqp_log/case4109.log
+```
 
 
 ## **地址分配方法**
