@@ -25,6 +25,7 @@ interests:
 - 计算机体系结构
 - RDMA
 - InfiniBand
+- 系统虚拟化
 
 education:
   courses:

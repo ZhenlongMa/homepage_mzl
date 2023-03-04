@@ -1,6 +1,6 @@
 ---
 title: RDMA网卡系统级功能验证框架
-summary: 本工作对课题组开发的RDMA网卡作RTL功能验证，使用UVM框架判定网卡工作的正确性。
+summary: 本工作对课题组开发的RDMA网卡作系统级功能验证，使用UVM框架判定网卡硬件代码的正确性。
 date: ""
 publishDate: "2021-06-03T14:33:00+08:00"
 lastmod: ""
@@ -37,18 +37,15 @@ tags:
 ---
 [本项目源代码在此](https://github.com/ZhenlongMa/RDMA-NIC-Verification)
 
-## **函谷HCA介绍**
-RDMA网卡（简称RNIC）是主机与RDMA网络之间的软硬件交互接口，通过旁路内核从而降低延迟并达到较高带宽。本课题组组开发的RNIC支持最多8192个连接，带宽达到100Gbps（数据位宽256bit，时钟500MHz）。
-
-### **软硬件接口** 
-RNIC向主机暴露BAR空间用作配置寄存器和门铃寄存器。
+## **函谷RNIC介绍**
+RDMA网卡（简称RNIC）是主机与RDMA网络之间的软硬件交互接口，通过旁路内核从而降低延迟并达到较高带宽。本课题组开发的RNIC支持最多8192个连接，带宽达到100Gbps（数据位宽256bit，时钟500MHz），软件层支持基础verbs。
 
 ## **验证平台架构设计**
 验证平台基于UVM搭建，整体结构图如下：
 
 {{< figure src="framework.png" caption="Verification Framework" numbered="true" height="75%" width="75%" >}}
 
-验证平台模拟了两台主机互相发送数据，两台主机抽象为两个sub_env。
+验证平台模拟了两台主机互相发送数据，两台主机抽象为两个sub_env，其中各有一个主动方（master agent）和一个被动方（slave agent）。
 
 ### **Component**
 
@@ -56,7 +53,7 @@ RNIC向主机暴露BAR空间用作配置寄存器和门铃寄存器。
 DUT与主机侧通信采用[Xilinx提供的PCIe IP](https://www.xilinx.com/products/intellectual-property/7_series_gen_3_pci_express.html#tabAnchor-overview)，其接口可参考其文档。
 
 ## **激励生成机制**
-验证平台根据运行时参数确定本次验证的连接数、数据量等信息。
+验证平台根据运行时参数确定本次验证的连接数、数据量等信息。验证平台的基类模拟了ib_verbs库中的主要函数。
 
 ### **命令行用户接口**
 命令行中需要指定的参数及取值范围如下表：
