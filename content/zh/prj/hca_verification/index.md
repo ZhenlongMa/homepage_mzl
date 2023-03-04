@@ -43,7 +43,7 @@ RDMA网卡（简称RNIC）是主机与RDMA网络之间的软硬件交互接口�
 ## **验证平台架构设计**
 验证平台基于UVM搭建，整体结构图如下：
 
-{{< figure src="framework.png" caption="Verification Framework" numbered="true" height="75%" width="75%" >}}
+{{< figure src="framework.png" caption="Verification Framework" numbered="true" height="100%" width="100%" >}}
 
 验证平台模拟了两台主机互相发送数据，两台主机抽象为两个sub_env，其中各有一个主动方（master agent）和一个被动方（slave agent）。
 
