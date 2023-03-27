@@ -37,7 +37,7 @@ tags:
 ---
 [本项目源代码在此](https://github.com/ZhenlongMa/RDMA-NIC-Verification)
 
-## **函谷RNIC介绍**
+## **函谷RNIC简介**
 RDMA网卡（简称RNIC）是主机与RDMA网络之间的软硬件交互接口，通过旁路内核从而降低延迟并达到较高带宽。本课题组开发的RNIC支持最多8192个连接，带宽达到100Gbps（数据位宽256bit，时钟500MHz），软件层支持基础verbs。
 
 ## **验证平台架构设计**
