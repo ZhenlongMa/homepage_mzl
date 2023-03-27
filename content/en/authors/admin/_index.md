@@ -79,6 +79,6 @@ user_groups:
 #   - HTML
 ---
 
-Zhenlong Ma is a Ph.D candidate of Computer Architecture in Institute of Computing Technology, Chinese Academy of Scienses. His research interests include high performance computer network, RDMA, QoS and computer architecture. 
+Zhenlong Ma is a Ph.D candidate of Computer Architecture in Institute of Computing Technology, Chinese Academy of Sciences. His research interests include high performance computer network, RDMA, QoS and computer architecture. 
 
 He has no research publication so far.
