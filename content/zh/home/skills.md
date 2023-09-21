@@ -41,13 +41,13 @@ subtitle = ""
   icon = "laptop-code"
   icon_pack = "fas"
   name = "Gem-5"
-  description = "30%"
+  description = "60%"
 
 [[feature]]
   icon = "memory"
   icon_pack = "fas"
   name = "计算机体系结构"
-  description = "50%"
+  description = "70%"
 
 # Uncomment to use emoji icons.
 # [[feature]]

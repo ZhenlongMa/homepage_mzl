@@ -5,7 +5,7 @@ summary: 本文为论文总结
 authors:
 
 date: ""
-publishDate: "2023-06-02T15:04:00+08:00"
+publishDate: "2023-08-10T15:04:00+08:00"
 lastmod: ""
 
 
@@ -20,7 +20,7 @@ profile: true
 share: false
 
 gitment: true
-slug: Net-cn
+slug: convergence-hyperscale-cn
 
 featured: false
 headless: false
@@ -42,8 +42,8 @@ header:
 #   - HTML
 ---
 
-本文是Torsten Hoefler一篇从设计、运维、编程等多方面论述HPC和数据中心网络差别的文章。
+本文是ETH的一位体系结构研究者Torsten Hoefler的一篇综述性文章。
 
-表面上同样是大规模计算机集群，数据中心和HPC的网络大相径庭，这一切根植于两者的根本目标不同。
+我们往往将数据中心和高性能计算看做两个不同种类的环境，两者除了都是大规模集群这一点外似乎并没有什么共同点。此文从设计、运维、编程等多方面全面介绍了HPC和数据中心网络差别。
 
 {{< figure src="Capture.jpg" caption="**数据中心网络与HPC网络**" numbered="true" height="75%" width="75%" >}}
