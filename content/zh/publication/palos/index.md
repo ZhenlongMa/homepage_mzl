@@ -22,7 +22,9 @@ publication_short: In *HPCC*
 abstract: In recent years, Remote Direct Memory Access (RDMA) has gained significant attraction within modern hyperscale data centers. However, RNIC fails to provide fine-grained performance isolation among network flows with different traffic patterns which co-exist in multi-tenant data centers and typically have various bandwidth, throughput and latency requirements.In this paper, we reveal that the drawbacks on isolation root in the packet-level flow scheduling mechanism implemented in the RNIC hardware. To solve this problem, we introduce Palos, a fair and flexible flow-scheduling mechanism. In the hardware layer, Palos adopts a data chunk based scheduling mechanism by reconstructing communication descriptors. The data chunk based scheduling diminishes the performance interference between large flows and small flows. Palos configures the scheduler in the software layer using a hierarchical weight setting to enable customized performance policy while preventing the configuration of users from interfering each other. Our experiments demonstrate that Palos provides better performance isolation and performance control flexibility compared with the commodity RDMA NIC and existing optimization framework.
 
 # Summary. An optional shortened abstract.
-summary: This paper addresses RDMA’s limitations in isolating network flows with diverse performance needs in multi-tenant data centers. The proposed solution, Palos, improves performance isolation by using a data chunk-based scheduling mechanism at the hardware level, reducing interference between large and small flows. A hierarchical, weight-based scheduler configuration in the software layer further allows customized, interference-free performance policies. Experiments show that Palos provides better isolation and flexibility than current RDMA NICs.
+summary: 本工作首先通过实验分析并证实了RDMA网卡内存在的性能隔离问题及其根源，继而提出Palos，基于硬件的公平、灵活的流调度机制。Palos消除了商用网卡中存在的异质化通信场景下的大小流性能干扰问题，并允许各级用户设定更灵活的性能策略。
+
+# This paper addresses RDMA’s limitations in isolating network flows with diverse performance needs in multi-tenant data centers. The proposed solution, Palos, improves performance isolation by using a data chunk-based scheduling mechanism at the hardware level, reducing interference between large and small flows. A hierarchical, weight-based scheduler configuration in the software layer further allows customized, interference-free performance policies. Experiments show that Palos provides better isolation and flexibility than current RDMA NICs.
 
 tags:
 - Source Themes
@@ -65,4 +67,4 @@ slides:
 ---
 
 
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+<!-- Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). -->
