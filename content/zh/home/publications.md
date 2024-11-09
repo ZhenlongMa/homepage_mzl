@@ -25,11 +25,11 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = "dddd"
-    category = ""
-    publication_type = ""
-    author = "Zhenlong Ma"
-    exclude_featured = false
+    # tag = "dddd"
+    # category = ""
+    # publication_type = ""
+    # author = "Zhenlong Ma"
+    # exclude_featured = false
   
 [design]
   # Toggle between the various page layout types.
