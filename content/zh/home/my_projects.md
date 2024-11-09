@@ -19,7 +19,7 @@ widget = "pages"
 headless = true
 active = true
 weight = 65
-title = "Projects"
+title = "项目经历"
 [design]
     view = 2
     columns = "2"
