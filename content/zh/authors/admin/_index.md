@@ -20,10 +20,10 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: 
 
-interests:
-- 计算机网络
-- 计算机体系结构
-- RDMA
+# interests:
+# - 计算机网络
+# - 计算机体系结构
+# - RDMA
 
 education:
   courses:
