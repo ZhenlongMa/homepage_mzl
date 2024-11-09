@@ -28,12 +28,12 @@ bio:
 education:
   courses:
   - course: 电子科学与技术 本科
-    institution: 浙江大学
+    institution: 浙江大学 信息与电子工程学院
     institution_url:
     logo: zju_logo.png
     year: 2015 - 2019
   - course: 计算机系统结构 博士在读
-    institution: 中国科学院大学
+    institution: 中国科学院大学 中国科学院计算技术研究所
     institution_url:
     logo:
     year: 2019 - 
@@ -63,9 +63,9 @@ social:
   link: https://www.quora.com/profile/Zhenlong-Ma-2
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: cv
+  icon_pack: ai
+  link: files/马振龙简历.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
