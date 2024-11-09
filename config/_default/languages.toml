@@ -25,6 +25,11 @@
         weight = 30
 
     [[zh.menu.main]]
+        name = "发表论文"
+        url = "/publication/"
+        weight = 40
+
+    [[zh.menu.main]]
         name = "博客"
         url = "/post/"
         weight = 50

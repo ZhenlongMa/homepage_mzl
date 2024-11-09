@@ -99,6 +99,10 @@ TPUv3在2018年第四季度部署，在架构上并没有做过多调整，只�
 
 {{< figure src="param_table.jpg" caption="**TPU主要参数**" numbered="true" height="100%" width="100%" >}}
 
+## **第四代**
+
+TODO
+
 
 ## **参考文献**
 1. 计算机体系结构量化研究方法，第七章  
