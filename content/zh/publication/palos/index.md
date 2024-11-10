@@ -35,6 +35,8 @@ summary: 本工作首先通过实验分析并证实了RDMA网卡内存在的性�
 tags:
 - Source Themes
 featured: false
+gitment: true
+slug: palos-cn
 
 links:
 - name: GitHub
