@@ -2,7 +2,12 @@
 title: "Palos: Fair and Flexible Flow Scheduling on RNIC"
 authors:
 - admin
+- 杨帆
 - 康宁
+- 许晶
+- 元国军
+- 王展
+- 孙凝晖
 #- Robert Ford
 date: "2024-11-09T00:00:00Z"
 doi: ""
