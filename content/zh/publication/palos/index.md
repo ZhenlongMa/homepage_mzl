@@ -34,7 +34,7 @@ links:
 - name: GitHub
   url: https://github.com/ZhenlongMa/RNIC_Simulator_Scheduler
 - name: PDF
-  url: ../files.palos.pdf
+  url: ../files/palos.pdf
 # url_pdf: http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf
 # url_pdf: ''
 # url_code: '#'
