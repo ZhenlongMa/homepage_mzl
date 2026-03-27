@@ -27,7 +27,7 @@ bio:
 
 education:
   courses:
-  - course: 计算机系统结构 博士在读
+  - course: 计算机系统结构 博士
     institution: 中国科学院大学/中国科学院计算技术研究所
     institution_url:
     logo:
@@ -83,6 +83,6 @@ user_groups:
 #   - HTML
 ---
 
-马振龙是计算机系统结构方向的在读博士生，现就读于中国科学院计算技术研究所。研究兴趣包括高性能计算、计算机网络和计算机体系结构。就读期间曾经参与函谷高性能网络芯片研发，目前从事RDMA网络接口硬件架构优化工作，主要研究RDMA网络的可扩展性与隔离性问题。
+中国科学院计算技术研究所特别研究助理，研究方向包括高性能计算、计算机网络和计算机体系结构。博士就读期间曾经参与函谷高性能网络芯片研发，目前从事RDMA网络接口硬件架构优化工作，主要研究RDMA网络的可扩展性与隔离性问题。
 
 目前以一作身份于HPCC发表论文一篇：Palos: Fair and Flexible Flow Scheduling on RNIC；于CAL发表论文一篇：Toward Scalable RDMA through Resource Prefetching。
