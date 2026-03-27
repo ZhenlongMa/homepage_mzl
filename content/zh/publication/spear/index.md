@@ -24,8 +24,8 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE International Conference on High Performance Computing and Communications*
-publication_short: In *HPCC*
+publication: In *IEEE Computer Architecture Letters*
+publication_short: In *CAL*
 
 abstract: RDMA network is being widely deployed in data centers, high-performance computing, and AI clusters. By ofﬂoading the network processing protocol stack to hardware, RDMA bypasses the operating system kernel, thereby enabling high performance and low CPU overhead. However, the protocol processing demands substantial communication resources, and due to the limited hardware resources, commercial NICs (Network Interface Cards) experience a signiﬁcant number of cache misses in large-scale connection scenarios. This results in performance degradation, indicating that RDMA lacks scalability. In this paper, we ﬁrst analyze the characteristics of resource access in RDMA. Based on these characteristics, we propose a resource access prediction and prefetching mechanism in the hardware, which preemptively fetches the resources required by the protocol processing pipeline to the on-chip cache. This mechanism increases the NIC’s cache hit ratio. Evaluation results demonstrate that our approach improves throughput by 125% and reduces latency by 17.9% under large-scale communication scenarios.
 
