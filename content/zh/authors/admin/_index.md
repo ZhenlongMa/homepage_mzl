@@ -31,11 +31,11 @@ education:
     institution: 中国科学院大学/中国科学院计算技术研究所
     institution_url:
     logo:
-    year: 2019 - 
+    year: 2019 - 2025
   - course: 电子科学与技术 本科
     institution: 浙江大学 信息与电子工程学院
     institution_url:
-    logo: ../img/zju_logo.png
+    logo: zju_logo.png
     year: 2015 - 2019
 
 # Social/Academic Networking
