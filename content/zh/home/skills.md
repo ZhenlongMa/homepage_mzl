@@ -19,11 +19,11 @@ subtitle = ""
   icon_pack = "fas"
   name = "UVM"
   description = "60%"
-[[feature]]
-  icon = "code"
-  icon_pack = "fas"
-  name = "Chisel"
-  description = "20%"
+# [[feature]]
+#   icon = "code"
+#   icon_pack = "fas"
+#   name = "Chisel"
+#   description = "20%"
 
 [[feature]]
   icon = "laptop-code"
@@ -66,3 +66,5 @@ subtitle = ""
 #  description = "90%"
 
 +++
+
+技能
