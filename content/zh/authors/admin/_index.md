@@ -14,8 +14,8 @@ role: 计算机系统结构博士在读
 
 # Organizations/Affiliations
 organizations:
-- name: 中国科学院计算技术研究所
-  url: "http://www.ict.ac.cn/"
+- name: NVIDIA
+#   url: "http://www.ict.ac.cn/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
